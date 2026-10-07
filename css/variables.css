@@ -1,0 +1,36 @@
+:root {
+  /* Figma: Absolute */
+  --color-absolute-white: #ffffff;
+  --color-absolute-black: #000000;
+
+  /* Figma: Purple */
+  --color-purple-60: #703bf7;
+  --color-purple-65: #8254f8;
+  --color-purple-70: #946cf9;
+  --color-purple-75: #a685fa;
+  --color-purple-90: #dbcefd;
+  --color-purple-95: #ede7fe;
+  --color-purple-97: #f4f0fe;
+  --color-purple-99: #fbfaff;
+
+  /* Figma: White */
+  --color-white-90: #e4e4e7;
+  --color-white-95: #f1f1f3;
+  --color-white-97: #f7f7f8;
+  --color-white-99: #fcfcfd;
+
+  /* Figma: Grey */
+  --color-grey-08: #141414;
+  --color-grey-10: #1a1a1a;
+  --color-grey-15: #262626;
+  --color-grey-20: #333333;
+  --color-grey-30: #4d4d4d;
+  --color-grey-40: #666666;
+  --color-grey-50: #808080;
+  --color-grey-60: #999999;
+
+  /* Colors already referenced by header.css */
+  --color-surface: var(--color-grey-10);
+  --color-border: var(--color-grey-15);
+  --color-nav-hover: #b89bff;
+}
