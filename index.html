@@ -38,9 +38,136 @@
     rel="stylesheet"
     href="./css/global.css"
   >
+  <script src="./js/burgerButton.js" defer></script>
+  <script src="./js/closeButton.js" defer></script>
   <title>Home Page</title>
 </head>
 <body>
+<header class="header container">
+  <div class="header-announcement">
+    <div class="header-announcement-content">
+      <span>✨ Discover Your Dream Property with Estatein</span>
+      <a href="./properties.html">Learn More</a>
+    </div>
+    <button
+      class="header-announcement-close"
+      type="button"
+      aria-label="Close announcement"
+    >
+      <img
+        src="./images/items/button-header.svg"
+        alt=""
+        width="32"
+        height="32"
+      >
+    </button>
+  </div>
 
+  <div class="header-inner">
+    <div class="header-main">
+      <div class="header-brand">
+        <a
+          class="header-logo"
+          href="./index.html"
+          aria-label="Estatein home"
+        >
+          <img
+            src="./images/logo/Logo.svg"
+            alt="Estatein"
+            width="160"
+            height="48"
+          >
+        </a>
+      </div>
+
+      <nav
+        class="header-nav"
+        aria-label="Main navigation"
+      >
+        <ul class="header-nav-list">
+          <li>
+            <a
+              class="header-nav-link"
+              href="./index.html"
+              aria-current="page"
+            >Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./about.html"
+            >About Us
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./properties.html"
+            >Properties
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./services.html"
+            >Services
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a
+          class="header-contact"
+          href="./contact.html"
+        >Contact Us
+        </a>
+
+        <button
+          class="header-burger"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="site-dropdown-menu"
+          aria-expanded="false"
+          data-js-menu-toggle
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav
+      class="dropdown-menu"
+      id="site-dropdown-menu"
+      aria-label="Mobile navigation"
+      data-js-dropdown-menu
+    >
+      <ul class="dropdown-menu-list">
+        <li>
+          <a
+            href="./index.html"
+            aria-current="page"
+          >Home
+          </a>
+        </li>
+        <li>
+          <a href="./about.html">About Us</a>
+        </li>
+        <li>
+          <a href="./properties.html">Properties</a>
+        </li>
+        <li>
+          <a href="./services.html">Services</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 </body>
 </html>

@@ -1,0 +1,16 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-grey-08);
+  color: var(--color-absolute-white);
+  font-family: Urbanist, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 32px;
+  margin: 0 auto;
+}
