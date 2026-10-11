@@ -38,4 +38,21 @@
   --dropdown-pre-scale: 0.97;
   --dropdown-closing-scale: 0.99;
   --dropdown-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Card hover tilt */
+  --tilt-perspective: 1000px;
+  --tilt-return: 1000ms;
+  --tilt-return-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --tilt-follow: 400ms;
+  --tilt-follow-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --tilt-glare-opacity: 0.32;
+  --tilt-glare-fade: 300ms;
+  --tilt-glare-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --color-tilt-glare-strong: rgba(255, 255, 255, 0.48);
+  --color-tilt-glare-soft: rgba(255, 255, 255, 0.06);
+  --color-tilt-glare-medium: rgba(255, 255, 255, 0.22);
+  --color-tilt-glare-faint: rgba(255, 255, 255, 0.04);
+  --color-tilt-glare-wide: rgba(255, 255, 255, 0.10);
+  --color-tilt-glare-transparent: rgba(255, 255, 255, 0);
 }

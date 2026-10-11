@@ -38,12 +38,20 @@
     rel="stylesheet"
     href="./css/global.css"
   >
+  <link
+    rel="stylesheet"
+    href="./css/card-tilt.css"
+  >
   <script
     src="./js/burgerButton.js"
     defer
   ></script>
   <script
     src="./js/closeButton.js"
+    defer
+  ></script>
+  <script
+    src="./js/cardTilt.js"
     defer
   ></script>
   <title>Home Page</title>
@@ -513,6 +521,159 @@
           data-js-properties-next
         >
           <img src="./images/properties/arrow-right.svg" alt="" width="24" height="24" >
+        </button>
+      </nav>
+    </div>
+  </section>
+  <section class="testimonials" aria-labelledby="testimonials-title">
+    <div class="testimonials-header">
+      <img
+        class="testimonials-sparkles"
+        src="./images/properties/sparkles.svg"
+        alt=""
+        width="69"
+        height="30"
+      >
+      <h2 class="testimonials-title" id="testimonials-title">What Our Clients Say</h2>
+      <p class="testimonials-description">
+        Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.
+      </p>
+    </div>
+
+    <a class="testimonials-all" href="./about.html">View All Testimonials</a>
+
+    <ul
+      class="testimonials-list"
+      id="testimonials-list"
+      aria-label="Client testimonials. Scroll to read more reviews."
+      tabindex="0"
+      data-js-testimonials-list
+    >
+      <li class="review-card-item t-tilt" data-js-tilt>
+        <article class="review-card t-tilt-card" data-js-tilt-card aria-labelledby="wade-review-title">
+          <div class="review-rating" role="img" aria-label="Rated 5 out of 5">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+          </div>
+          <div class="review-content">
+            <h3 class="review-title" id="wade-review-title">Exceptional Service!</h3>
+            <blockquote class="review-quote">
+              <p class="review-text">
+                Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!
+              </p>
+            </blockquote>
+          </div>
+          <div class="review-author">
+            <img
+              class="review-author-photo"
+              src="./images/testimonials/wade-warren.png"
+              alt=""
+              width="60"
+              height="60"
+              loading="lazy"
+            >
+            <div class="review-author-info">
+              <span class="review-author-name">Wade Warren</span>
+              <span class="review-author-location">USA, California</span>
+            </div>
+          </div>
+          <div class="t-tilt-glare" aria-hidden="true"></div>
+        </article>
+      </li>
+
+      <li class="review-card-item t-tilt" data-js-tilt>
+        <article class="review-card t-tilt-card" data-js-tilt-card aria-labelledby="emelie-review-title">
+          <div class="review-rating" role="img" aria-label="Rated 5 out of 5">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+          </div>
+          <div class="review-content">
+            <h3 class="review-title" id="emelie-review-title">Efficient and Reliable</h3>
+            <blockquote class="review-quote">
+              <p class="review-text">
+                Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.
+              </p>
+            </blockquote>
+          </div>
+          <div class="review-author">
+            <img
+              class="review-author-photo"
+              src="./images/testimonials/emelie-thomson.png"
+              alt=""
+              width="60"
+              height="60"
+              loading="lazy"
+            >
+            <div class="review-author-info">
+              <span class="review-author-name">Emelie Thomson</span>
+              <span class="review-author-location">USA, Florida</span>
+            </div>
+          </div>
+          <div class="t-tilt-glare" aria-hidden="true"></div>
+        </article>
+      </li>
+
+      <li class="review-card-item t-tilt" data-js-tilt>
+        <article class="review-card t-tilt-card" data-js-tilt-card aria-labelledby="john-review-title">
+          <div class="review-rating" role="img" aria-label="Rated 5 out of 5">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+            <img src="./images/testimonials/rating-star.svg" alt="" width="44" height="44">
+          </div>
+          <div class="review-content">
+            <h3 class="review-title" id="john-review-title">Trusted Advisors</h3>
+            <blockquote class="review-quote">
+              <p class="review-text">
+                The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!
+              </p>
+            </blockquote>
+          </div>
+          <div class="review-author">
+            <img
+              class="review-author-photo"
+              src="./images/testimonials/john-mans.png"
+              alt=""
+              width="60"
+              height="60"
+              loading="lazy"
+            >
+            <div class="review-author-info">
+              <span class="review-author-name">John Mans</span>
+              <span class="review-author-location">USA, Nevada</span>
+            </div>
+          </div>
+          <div class="t-tilt-glare" aria-hidden="true"></div>
+        </article>
+      </li>
+    </ul>
+
+    <div class="testimonials-footer">
+      <nav class="testimonials-pagination" aria-label="Client testimonials pagination">
+        <span class="testimonials-counter" data-js-testimonials-counter><span class="testimonials-current-page">01</span> of 10</span>
+        <button
+          class="testimonials-arrow testimonials-arrow-prev"
+          type="button"
+          aria-label="Previous testimonials"
+          data-js-testimonials-prev
+          disabled
+        >
+          <img src="./images/properties/arrow-right.svg" alt="" width="24" height="24">
+        </button>
+        <button
+          class="testimonials-arrow testimonials-arrow-next"
+          type="button"
+          aria-label="Next testimonials"
+          data-js-testimonials-next
+        >
+          <img src="./images/properties/arrow-right.svg" alt="" width="24" height="24">
         </button>
       </nav>
     </div>
