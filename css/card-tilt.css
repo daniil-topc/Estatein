@@ -11,10 +11,10 @@
     rotateY(var(--tilt-ry, 0deg));
   transform-style: preserve-3d;
   transition: transform var(--tilt-return) var(--tilt-return-ease);
-  will-change: transform;
 }
 
 .t-tilt-card.is-tilting {
+  will-change: transform;
   transition: transform var(--tilt-follow) var(--tilt-follow-ease);
 }
 

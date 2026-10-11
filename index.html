@@ -11,16 +11,28 @@
     content="ie=edge"
   >
   <link
+    rel="preload"
+    as="image"
+    type="image/webp"
+    href="./images/hero/hero-building-960.webp"
+    imagesrcset="./images/hero/hero-building-480.webp 480w, ./images/hero/hero-building-768.webp 768w, ./images/hero/hero-building-960.webp 960w, ./images/hero/hero-building-1440.webp 1440w, ./images/hero/hero-building-1840.webp 1840w"
+    imagesizes="(max-width: 600px) calc(100vw - 32px), (max-width: 960px) calc(100vw - 64px), 47.9167vw"
+    fetchpriority="high"
+  >
+  <link
+    rel="preload"
+    as="font"
+    type="font/woff2"
+    href="./fonts/Urbanist-Variable.woff2"
+    crossorigin
+  >
+  <link
     rel="stylesheet"
     href="./css/fonts.css"
   >
   <link
     rel="stylesheet"
     href="./css/header.css"
-  >
-  <link
-    rel="stylesheet"
-    href="./css/footer.css"
   >
   <link
     rel="stylesheet"
@@ -234,7 +246,10 @@
       <div class="hero-media">
         <img
           class="hero-image"
-          src="./images/hero/hero-building.png"
+          src="./images/hero/hero-building-960.webp"
+          srcset="./images/hero/hero-building-480.webp 480w, ./images/hero/hero-building-768.webp 768w, ./images/hero/hero-building-960.webp 960w, ./images/hero/hero-building-1440.webp 1440w, ./images/hero/hero-building-1840.webp 1840w"
+          sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 960px) calc(100vw - 64px), 47.9167vw"
+          loading="eager"
           alt="Modern high-rise buildings with blue glass facades"
           width="920"
           height="814"
@@ -376,7 +391,10 @@
         <article class="property-card" aria-labelledby="seaside-property-title">
           <img
             class="property-card-image"
-            src="./images/properties/seaside-serenity-villa.png"
+            src="./images/properties/seaside-serenity-villa-864.webp"
+            srcset="./images/properties/seaside-serenity-villa-480.webp 480w, ./images/properties/seaside-serenity-villa-864.webp 864w, ./images/properties/seaside-serenity-villa-1296.webp 1296w"
+            sizes="(max-width: 600px) calc(100vw - 82px), (max-width: 760px) calc(100vw - 114px), (max-width: 960px) calc(50vw - 92px), (max-width: 1200px) calc(50vw - 152px), (max-width: 1440px) calc(33.3333vw - 128.6667px), (max-width: 1660px) calc(33.3333vw - 123.3333px), 430px"
+            decoding="async"
             alt="Modern white villa with a swimming pool and palm trees"
             width="432"
             height="318"
@@ -419,7 +437,10 @@
         <article class="property-card" aria-labelledby="metropolitan-property-title">
           <img
             class="property-card-image"
-            src="./images/properties/metropolitan-haven.png"
+            src="./images/properties/metropolitan-haven-864.webp"
+            srcset="./images/properties/metropolitan-haven-480.webp 480w, ./images/properties/metropolitan-haven-864.webp 864w, ./images/properties/metropolitan-haven-1296.webp 1296w"
+            sizes="(max-width: 600px) calc(100vw - 82px), (max-width: 760px) calc(100vw - 114px), (max-width: 960px) calc(50vw - 92px), (max-width: 1200px) calc(50vw - 152px), (max-width: 1440px) calc(33.3333vw - 128.6667px), (max-width: 1660px) calc(33.3333vw - 123.3333px), 430px"
+            decoding="async"
             alt="Light blue residential towers overlooking the waterfront"
             width="432"
             height="318"
@@ -462,7 +483,10 @@
         <article class="property-card" aria-labelledby="rustic-property-title">
           <img
             class="property-card-image"
-            src="./images/properties/rustic-retreat-cottage.png"
+            src="./images/properties/rustic-retreat-cottage-864.webp"
+            srcset="./images/properties/rustic-retreat-cottage-480.webp 480w, ./images/properties/rustic-retreat-cottage-864.webp 864w, ./images/properties/rustic-retreat-cottage-1296.webp 1296w"
+            sizes="(max-width: 600px) calc(100vw - 82px), (max-width: 760px) calc(100vw - 114px), (max-width: 960px) calc(50vw - 92px), (max-width: 1200px) calc(50vw - 152px), (max-width: 1440px) calc(33.3333vw - 128.6667px), (max-width: 1660px) calc(33.3333vw - 123.3333px), 430px"
+            decoding="async"
             alt="Glass skyscrapers lit in purple at dusk"
             width="432"
             height="318"
@@ -569,7 +593,8 @@
           <div class="review-author">
             <img
               class="review-author-photo"
-              src="./images/testimonials/wade-warren.png"
+              src="./images/testimonials/wade-warren.webp"
+              decoding="async"
               alt=""
               width="60"
               height="60"
@@ -604,7 +629,8 @@
           <div class="review-author">
             <img
               class="review-author-photo"
-              src="./images/testimonials/emelie-thomson.png"
+              src="./images/testimonials/emelie-thomson.webp"
+              decoding="async"
               alt=""
               width="60"
               height="60"
@@ -639,7 +665,8 @@
           <div class="review-author">
             <img
               class="review-author-photo"
-              src="./images/testimonials/john-mans.png"
+              src="./images/testimonials/john-mans.webp"
+              decoding="async"
               alt=""
               width="60"
               height="60"
