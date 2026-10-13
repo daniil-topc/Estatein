@@ -59,6 +59,10 @@
     rel="stylesheet"
     href="./css/card-tilt.css"
   >
+  <link
+    rel="stylesheet"
+    href="./css/footer.css"
+  >
   <script
     src="./js/burgerButton.js"
     defer
@@ -203,6 +207,7 @@
 <main class="main container">
   <section
     class="hero"
+    id="hero"
     aria-labelledby="hero-title"
   >
     <div class="hero-main">
@@ -277,6 +282,7 @@
 
     <ul
       class="hero-features"
+      id="features"
       aria-label="Explore Estatein services"
     >
       <li class="hero-feature">
@@ -371,6 +377,7 @@
   </section>
   <section
     class="properties"
+    id="properties"
     aria-labelledby="properties-title"
   >
     <div class="properties-header">
@@ -679,6 +686,7 @@
   </section>
   <section
     class="testimonials"
+    id="testimonials"
     aria-labelledby="testimonials-title"
   >
     <div class="testimonials-header">
@@ -1161,6 +1169,115 @@
     </div>
   </section>
 </main>
+
+<footer class="footer container">
+  <div class="footer-inner container">
+    <div class="footer-brand">
+      <a class="footer-logo" href="./index.html" aria-label="Estatein home">
+        <img src="./images/logo/Logo.svg" alt="Estatein" width="160" height="48">
+      </a>
+      <div class="footer-subscribe" role="group" aria-label="Email subscription">
+        <img class="footer-email-icon" src="./images/footer/email.png" alt="" width="24" height="24">
+        <input
+          class="footer-email"
+          id="footer-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          placeholder="Enter Your Email"
+          aria-label="Email address"
+          data-js-footer-email
+        >
+        <button
+          class="footer-send"
+          type="button"
+          aria-label="Subscribe by email"
+          data-js-footer-send
+        >
+          <img src="./images/footer/send.png" alt="" width="24" height="24">
+        </button>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-group footer-group-home">
+        <h3 class="footer-group-title"><a href="./index.html">Home</a></h3>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="./index.html#hero">Hero Section</a></li>
+          <li><a class="footer-link" href="./index.html#features">Features</a></li>
+          <li><a class="footer-link" href="./index.html#properties">Properties</a></li>
+          <li><a class="footer-link" href="./index.html#testimonials">Testimonials</a></li>
+          <li><a class="footer-link" href="./index.html#faqs">FAQ’s</a></li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-about">
+        <h3 class="footer-group-title"><a href="./about.html">About Us</a></h3>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="./about.html">Our Story</a></li>
+          <li><a class="footer-link" href="./about.html">Our Works</a></li>
+          <li><a class="footer-link" href="./about.html">How It Works</a></li>
+          <li><a class="footer-link" href="./about.html">Our Team</a></li>
+          <li><a class="footer-link" href="./about.html">Our Clients</a></li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-properties">
+        <h3 class="footer-group-title"><a href="./properties.html">Properties</a></h3>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="./properties.html">Portfolio</a></li>
+          <li><a class="footer-link" href="./properties.html">Categories</a></li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-services">
+        <h3 class="footer-group-title"><a href="./services.html">Services</a></h3>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="./services.html">Valuation Mastery</a></li>
+          <li><a class="footer-link" href="./services.html">Strategic Marketing</a></li>
+          <li><a class="footer-link" href="./services.html">Negotiation Wizardry</a></li>
+          <li><a class="footer-link" href="./services.html">Closing Success</a></li>
+          <li><a class="footer-link" href="./services.html">Property Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-contact">
+        <h3 class="footer-group-title"><a href="./contact.html">Contact Us</a></h3>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="./contact.html">Contact Form</a></li>
+          <li><a class="footer-link" href="./contact.html">Our Offices</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner container">
+      <div class="footer-legal">
+        <p class="footer-copyright">©2023 Estatein. All Rights Reserved.</p>
+        <button class="footer-terms" type="button" data-js-footer-terms>Terms &amp; Conditions</button>
+      </div>
+      <ul class="footer-socials" aria-label="Social media">
+        <li>
+          <a class="footer-social-link" href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <img src="./images/footer/facebook.png" alt="" width="24" height="24">
+          </a>
+        </li>
+        <li>
+          <a class="footer-social-link" href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <img src="./images/footer/linkedin.png" alt="" width="24" height="24">
+          </a>
+        </li>
+        <li>
+          <a class="footer-social-link" href="https://x.com/" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+            <img src="./images/footer/twitter.png" alt="" width="24" height="24">
+          </a>
+        </li>
+        <li>
+          <a class="footer-social-link" href="https://www.youtube.com/" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+            <img src="./images/footer/youtube.png" alt="" width="24" height="24">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
