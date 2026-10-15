@@ -6,6 +6,15 @@
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link
     rel="preload"
+    as="image"
+    type="image/webp"
+    href="./images/about/journey-house-768.webp"
+    imagesrcset="./images/about/journey-house-480.webp 480w, ./images/about/journey-house-768.webp 768w, ./images/about/journey-house-1200.webp 1200w, ./images/about/journey-house-1536.webp 1536w"
+    imagesizes="(max-width: 600px) calc(121.43vw - 38.86px), (max-width: 960px) calc(100vw - 64px), (max-width: 1440px) calc(50vw - 110px), (max-width: 1660px) calc(50vw - 72px), 758px"
+    fetchpriority="high"
+  >
+  <link
+    rel="preload"
     as="font"
     type="font/woff2"
     href="./fonts/Urbanist-Variable.woff2"
@@ -16,6 +25,7 @@
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/pages/about.css">
   <script src="./js/burgerButton.js" defer></script>
   <script src="./js/closeButton.js" defer></script>
   <title>About Us | Estatein</title>
@@ -145,6 +155,50 @@
     </nav>
   </div>
 </header>
-<main class="main container"></main>
+<main class="main container">
+  <section class="about-hero" id="our-journey" aria-labelledby="journey-title">
+    <div class="about-hero-content">
+      <img
+        class="about-hero-sparkles"
+        src="./images/properties/sparkles.svg"
+        alt=""
+        width="69"
+        height="30"
+      >
+      <h1 class="about-hero-title" id="journey-title">Our Journey</h1>
+      <p class="about-hero-description">
+        Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we've expanded our reach, forged valuable partnerships, and gained the trust of countless clients.
+      </p>
+      <ul class="about-hero-stats" aria-label="Estatein in figures">
+        <li class="about-hero-stat">
+          <strong class="about-hero-stat-value">200+</strong>
+          <span class="about-hero-stat-label">Happy Customers</span>
+        </li>
+        <li class="about-hero-stat">
+          <strong class="about-hero-stat-value">10k+</strong>
+          <span class="about-hero-stat-label">Properties For Clients</span>
+        </li>
+        <li class="about-hero-stat">
+          <strong class="about-hero-stat-value">16+</strong>
+          <span class="about-hero-stat-label">Years of Experience</span>
+        </li>
+      </ul>
+    </div>
+    <div class="about-hero-media">
+      <img
+        class="about-hero-image"
+        src="./images/about/journey-house-768.webp"
+        srcset="./images/about/journey-house-480.webp 480w, ./images/about/journey-house-768.webp 768w, ./images/about/journey-house-1200.webp 1200w, ./images/about/journey-house-1536.webp 1536w"
+        sizes="(max-width: 600px) calc(121.43vw - 38.86px), (max-width: 960px) calc(100vw - 64px), (max-width: 1440px) calc(50vw - 110px), (max-width: 1660px) calc(50vw - 72px), 758px"
+        alt="A hand holding a model of a modern house"
+        width="756"
+        height="546"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      >
+    </div>
+  </section>
+</main>
 </body>
 </html>
