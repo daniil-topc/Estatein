@@ -29,6 +29,8 @@
   --color-grey-50: #808080;
   --color-grey-60: #999999;
 
+  --color-experience-glow: rgba(112, 59, 247, 0.1);
+
   /* Colors already referenced by header.css */
   --color-surface: var(--color-grey-10);
   --color-border: var(--color-grey-15);
