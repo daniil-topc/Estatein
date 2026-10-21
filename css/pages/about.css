@@ -1,6 +1,12 @@
 .main.container {
+	max-width: none;
+	padding: 0;
+}
+
+.about-content.container {
 	max-width: 1660px;
-	padding-block: 100px;
+	padding-top: 100px;
+	padding-bottom: 0;
 }
 
 .about-hero {
@@ -289,9 +295,345 @@
 	line-height: 1.5;
 }
 
+.about-content > section {
+	scroll-margin-top: 180px;
+}
+
+.team,
+.clients {
+	display: flow-root;
+	margin-top: 150px;
+}
+
+.team-sparkles,
+.clients-sparkles {
+	width: 69px;
+	height: 30px;
+	margin: -40px 0 10px -20px;
+}
+
+.team-title,
+.clients-title {
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.team-description,
+.clients-description {
+	max-width: 1296px;
+	margin-top: 14px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.team-list {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 30px;
+	margin-top: 80px;
+}
+
+.team-item {
+	min-width: 0;
+}
+
+.team-card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 30px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 12px;
+}
+
+.team-card-media {
+	position: relative;
+}
+
+.team-card-photo {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 316 / 253;
+	border-radius: 12px;
+	object-fit: cover;
+}
+
+.team-card-social {
+	position: absolute;
+	bottom: -26px;
+	left: 50%;
+	width: 76px;
+	height: 52px;
+	border-radius: 43px;
+	transform: translateX(-50%);
+	transition: opacity 0.2s ease;
+}
+
+.team-card-social img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.team-card-info {
+	flex: 1;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.team-card-name {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.team-card-role {
+	margin-top: 6px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.team-card-contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-top: auto;
+	padding: 14px 14px 14px 24px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 100px;
+	color: var(--color-absolute-white);
+	background-color: var(--color-grey-10);
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: border-color 0.2s ease;
+}
+
+.team-card-info + .team-card-contact {
+	margin-top: 24px;
+}
+
+.team-card-send {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 44px;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: var(--color-purple-60);
+}
+
+.team-card-send img {
+	width: 24px;
+	height: 24px;
+}
+
+.clients-list {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: calc((100% - 50px) / 2);
+	gap: 50px;
+	margin: 72px -8px 0;
+	padding: 8px;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-padding-inline: 8px;
+	scrollbar-width: thin;
+	scrollbar-color: var(--color-grey-30) var(--color-grey-08);
+}
+
+.clients-item {
+	min-width: 0;
+	scroll-snap-align: start;
+}
+
+.client-card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 50px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 12px;
+	box-shadow: 0 0 0 8px var(--color-grey-10);
+}
+
+.client-card-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.client-card-heading {
+	min-width: 0;
+}
+
+.client-since {
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.client-name {
+	margin-top: 6px;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.client-website {
+	flex-shrink: 0;
+	padding: 18px 24px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 10px;
+	color: var(--color-absolute-white);
+	background-color: var(--color-grey-10);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	cursor: pointer;
+	transition: border-color 0.2s ease;
+}
+
+.client-details {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 30px;
+	margin-top: 40px;
+}
+
+.client-detail {
+	min-width: 0;
+}
+
+.client-detail + .client-detail {
+	padding-left: 30px;
+	border-left: 1px solid var(--color-grey-15);
+}
+
+.client-detail-label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.client-detail-label img {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+}
+
+.client-detail-value {
+	margin-top: 6px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.client-quote {
+	flex: 1;
+	margin-top: 40px;
+	padding: 30px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 12px;
+}
+
+.client-quote-label {
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.client-quote-text {
+	margin-top: 14px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.clients-pagination {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 50px;
+	padding-top: 20px;
+	border-top: 1px solid var(--color-grey-15);
+}
+
+.clients-counter {
+	margin-right: auto;
+	color: var(--color-grey-60);
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.clients-current {
+	color: var(--color-absolute-white);
+}
+
+.clients-arrow {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 58px;
+	width: 58px;
+	height: 58px;
+	padding: 0;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 50%;
+	background-color: var(--color-grey-10);
+	cursor: pointer;
+	transition: border-color 0.2s ease;
+}
+
+.clients-arrow img {
+	width: 24px;
+	height: 24px;
+}
+
+.clients-arrow-prev img {
+	transform: rotate(180deg);
+}
+
+.clients-arrow:disabled {
+	background-color: var(--color-grey-08);
+	cursor: default;
+}
+
+.clients-arrow:disabled img {
+	opacity: 0.35;
+}
+
+.team-card-social:focus-visible,
+.team-card-contact:focus-visible,
+.client-website:focus-visible,
+.clients-arrow:focus-visible {
+	outline: 2px solid var(--color-purple-70);
+	outline-offset: 4px;
+}
+
+.clients-list:focus-visible {
+	outline: 2px solid var(--color-purple-70);
+	outline-offset: -2px;
+}
+
+.main > .cta {
+	margin-top: 150px;
+}
+
+
 @media (max-width: 1440px) {
-	.main.container {
-		padding: 80px;
+	.about-content.container {
+		padding: 80px 80px 0;
 	}
 
 	.about-hero {
@@ -468,11 +810,174 @@
 		margin-top: 16px;
 		font-size: 16px;
 	}
+
+	.team,
+	.clients {
+		margin-top: 120px;
+	}
+
+	.team-sparkles,
+	.clients-sparkles {
+		width: 54px;
+		height: 24px;
+		margin-top: -34px;
+		margin-left: -10px;
+	}
+
+	.team-title,
+	.clients-title {
+		font-size: 38px;
+	}
+
+	.team-description,
+	.clients-description {
+		max-width: 1029px;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.team-list {
+		gap: 20px;
+		margin-top: 60px;
+	}
+
+	.team-card {
+		padding: 24px;
+		border-radius: 10px;
+	}
+
+	.team-card-photo {
+		border-radius: 10px;
+	}
+
+	.team-card-social {
+		bottom: -20px;
+		width: 60px;
+		height: 40px;
+	}
+
+	.team-card-info {
+		margin-top: 40px;
+	}
+
+	.team-card-name {
+		font-size: 20px;
+	}
+
+	.team-card-role {
+		margin-top: 4px;
+		font-size: 16px;
+	}
+
+	.team-card-contact {
+		padding: 10px 10px 10px 20px;
+		font-size: 14px;
+	}
+
+	.team-card-info + .team-card-contact {
+		margin-top: 20px;
+	}
+
+	.team-card-send {
+		flex-basis: 36px;
+		width: 36px;
+		height: 36px;
+	}
+
+	.team-card-send img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.clients-list {
+		grid-auto-columns: calc((100% - 40px) / 2);
+		gap: 40px;
+		margin-top: 52px;
+	}
+
+	.client-card {
+		padding: 40px;
+		border-radius: 10px;
+		box-shadow: 0 0 0 6px var(--color-grey-10);
+	}
+
+	.client-since {
+		font-size: 16px;
+	}
+
+	.client-name {
+		margin-top: 4px;
+		font-size: 24px;
+	}
+
+	.client-website {
+		padding: 14px 20px;
+		border-radius: 8px;
+		font-size: 14px;
+	}
+
+	.client-details {
+		gap: 20px;
+		margin-top: 30px;
+	}
+
+	.client-detail + .client-detail {
+		padding-left: 20px;
+	}
+
+	.client-detail-label {
+		gap: 4px;
+		font-size: 16px;
+	}
+
+	.client-detail-label img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.client-detail-value {
+		margin-top: 4px;
+		font-size: 16px;
+	}
+
+	.client-quote {
+		margin-top: 30px;
+		padding: 20px;
+	}
+
+	.client-quote-label,
+	.client-quote-text {
+		font-size: 16px;
+	}
+
+	.client-quote-text {
+		margin-top: 10px;
+	}
+
+	.clients-pagination {
+		margin-top: 40px;
+		padding-top: 16px;
+	}
+
+	.clients-counter {
+		font-size: 16px;
+	}
+
+	.clients-arrow {
+		flex-basis: 44px;
+		width: 44px;
+		height: 44px;
+	}
+
+	.main > .cta {
+		margin-top: 120px;
+	}
+
 }
 
 @media (max-width: 960px) {
-	.main.container {
-		padding: 60px 32px;
+	.about-content.container {
+		padding: 60px 32px 0;
 	}
 
 	.about-hero {
@@ -548,6 +1053,33 @@
 	.experience-card {
 		padding: 30px;
 	}
+
+	.team,
+	.clients {
+		margin-top: 100px;
+	}
+
+	.team-title,
+	.clients-title {
+		font-size: 32px;
+	}
+
+	.team-list {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 24px;
+		margin-top: 40px;
+	}
+
+	.clients-list {
+		grid-auto-columns: 100%;
+		gap: 24px;
+		margin-top: 32px;
+	}
+
+	.main > .cta {
+		margin-top: 100px;
+	}
+
 }
 
 @media (max-width: 760px) {
@@ -573,11 +1105,16 @@
 	.achievement-card {
 		padding: 30px;
 	}
+
+	.client-card {
+		padding: 30px;
+	}
+
 }
 
 @media (max-width: 600px) {
-	.main.container {
-		padding: 50px 16px;
+	.about-content.container {
+		padding: 50px 16px 0;
 	}
 
 	.about-hero {
@@ -729,5 +1266,157 @@
 	.experience-card-description {
 		margin-top: 14px;
 		font-size: 14px;
+	}
+
+	.team,
+	.clients {
+		margin-top: 80px;
+	}
+
+	.team-sparkles,
+	.clients-sparkles {
+		width: 45px;
+		height: 20px;
+		margin-top: -26px;
+		margin-bottom: 6px;
+		margin-left: -8px;
+	}
+
+	.team-title,
+	.clients-title {
+		font-size: 28px;
+	}
+
+	.team-description,
+	.clients-description {
+		margin-top: 6px;
+		font-size: 14px;
+	}
+
+	.team-list {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.team-card {
+		padding: 20px;
+		border-radius: 12px;
+	}
+
+	.team-card-photo {
+		aspect-ratio: 318 / 270;
+	}
+
+	.team-card-name {
+		font-size: 18px;
+	}
+
+	.team-card-role {
+		font-size: 14px;
+	}
+
+	.team-card-contact {
+		padding: 8px 8px 8px 24px;
+	}
+
+	.team-card-send {
+		flex-basis: 48px;
+		width: 48px;
+		height: 48px;
+	}
+
+	.team-card-send img {
+		width: 24px;
+		height: 24px;
+	}
+
+	.clients-list {
+		gap: 20px;
+	}
+
+	.client-card {
+		padding: 24px;
+		border-radius: 12px;
+		box-shadow: 0 0 0 4px var(--color-grey-10);
+	}
+
+	.client-card-header {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 20px;
+	}
+
+	.client-since {
+		font-size: 14px;
+	}
+
+	.client-name {
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	.client-details {
+		margin-top: 30px;
+	}
+
+	.client-detail-label,
+	.client-detail-value,
+	.client-quote-label,
+	.client-quote-text {
+		font-size: 14px;
+	}
+
+	.client-detail-label img {
+		width: 18px;
+		height: 18px;
+	}
+
+	.client-quote {
+		border-radius: 12px;
+	}
+
+	.client-quote-text {
+		margin-top: 20px;
+	}
+
+	.clients-pagination {
+		justify-content: space-between;
+		margin-top: 30px;
+	}
+
+	.clients-counter {
+		order: 1;
+		margin-right: 0;
+		font-size: 14px;
+	}
+
+	.clients-arrow-next {
+		order: 2;
+	}
+
+	.main > .cta {
+		margin-top: 80px;
+	}
+
+}
+
+@media (hover: hover) {
+	.team-card-social:hover {
+		opacity: 0.8;
+	}
+
+	.team-card-contact:hover,
+	.client-website:hover,
+	.clients-arrow:not(:disabled):hover {
+		border-color: var(--color-purple-60);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.team-card-social,
+	.team-card-contact,
+	.client-website,
+	.clients-arrow {
+		transition: none;
 	}
 }

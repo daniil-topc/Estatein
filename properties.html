@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Estatein properties and choose your preferred location, property type, budget, size and build year.">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preload" as="font" type="font/woff2" href="./fonts/Urbanist-Variable.woff2" crossorigin>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/pages/properties.css">
+  <script src="./js/burgerButton.js" defer></script>
+  <script src="./js/closeButton.js" defer></script>
+  <title>Properties | Estatein</title>
+</head>
+<body>
+<header class="header container">
+  <div class="header-announcement">
+    <div class="header-announcement-content">
+      <span>✨ Discover Your Dream Property with Estatein</span>
+      <a href="./properties.html">Learn More</a>
+    </div>
+    <button
+      class="header-announcement-close"
+      type="button"
+      aria-label="Close announcement"
+    >
+      <img
+        src="./images/items/button-header.svg"
+        alt=""
+        width="32"
+        height="32"
+      >
+    </button>
+  </div>
+
+  <div class="header-inner">
+    <div class="header-main">
+      <div class="header-brand">
+        <a
+          class="header-logo"
+          href="./index.html"
+          aria-label="Estatein home"
+        >
+          <img
+            src="./images/logo/Logo.svg"
+            alt="Estatein"
+            width="160"
+            height="48"
+          >
+        </a>
+      </div>
+
+      <nav
+        class="header-nav"
+        aria-label="Main navigation"
+      >
+        <ul class="header-nav-list">
+          <li>
+            <a
+              class="header-nav-link"
+              href="./index.html"
+            >Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./about.html"
+            >About Us
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./properties.html" aria-current="page"
+            >Properties
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./services.html"
+            >Services
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a
+          class="header-contact"
+          href="./contact.html"
+        >Contact Us
+        </a>
+
+        <button
+          class="header-burger"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="site-dropdown-menu"
+          aria-expanded="false"
+          data-js-menu-toggle
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav
+      class="dropdown-menu"
+      id="site-dropdown-menu"
+      aria-label="Mobile navigation"
+      data-js-dropdown-menu
+    >
+      <ul class="dropdown-menu-list">
+        <li>
+          <a
+            href="./index.html"
+          >Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="./about.html"
+          >About Us
+          </a>
+        </li>
+        <li>
+          <a href="./properties.html" aria-current="page">Properties</a>
+        </li>
+        <li>
+          <a href="./services.html">Services</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="main container">
+  <section class="properties-hero" id="properties-hero" aria-labelledby="properties-hero-title">
+    <div class="properties-hero-inner container">
+      <h1 class="properties-hero-title" id="properties-hero-title">Find Your Dream Property</h1>
+      <p class="properties-hero-description">
+        Welcome to Estatein, where your dream property awaits in every corner of our beautiful world. Explore our curated selection of properties, each offering a unique story and a chance to redefine your life. With categories to suit every dreamer, your journey starts here.
+      </p>
+    </div>
+  </section>
+
+  <div class="property-search container" id="property-search" role="search" aria-label="Find a property" data-js-property-search>
+    <div class="property-search-bar">
+      <input
+        class="property-search-input"
+        id="property-search-query"
+        name="query"
+        type="search"
+        placeholder="Search For A Property"
+        aria-label="Search for a property"
+        data-js-property-search-query
+      >
+      <button class="property-search-button" type="button" aria-label="Find Property" data-js-property-search-button>
+        <img src="./images/search/search.png" alt="" width="24" height="24">
+        <span class="property-search-button-label">Find Property</span>
+      </button>
+    </div>
+    <div class="property-search-filters">
+      <label class="property-filter" for="property-filter-location">
+        <img class="property-filter-icon" src="./images/search/location.png" alt="" width="24" height="24">
+        <select class="property-filter-select" id="property-filter-location" name="location" aria-label="Location" data-js-property-filter="location">
+          <option value="">Location</option>
+          <option value="new-york">New York</option>
+          <option value="los-angeles">Los Angeles</option>
+          <option value="chicago">Chicago</option>
+          <option value="houston">Houston</option>
+          <option value="miami">Miami</option>
+        </select>
+        <span class="property-filter-chevron" aria-hidden="true"></span>
+      </label>
+      <label class="property-filter" for="property-filter-type">
+        <img class="property-filter-icon" src="./images/search/property-type.png" alt="" width="24" height="24">
+        <select class="property-filter-select" id="property-filter-type" name="type" aria-label="Property Type" data-js-property-filter="type">
+          <option value="">Property Type</option>
+          <option value="villa">Villa</option>
+          <option value="apartment">Apartment</option>
+          <option value="cottage">Cottage</option>
+          <option value="house">House</option>
+        </select>
+        <span class="property-filter-chevron" aria-hidden="true"></span>
+      </label>
+      <label class="property-filter" for="property-filter-price">
+        <img class="property-filter-icon" src="./images/search/price.png" alt="" width="24" height="24">
+        <select class="property-filter-select" id="property-filter-price" name="price" aria-label="Pricing Range" data-js-property-filter="price">
+          <option value="">Pricing Range</option>
+          <option value="under-500000">Under $500,000</option>
+          <option value="500000-1000000">$500,000 – $1,000,000</option>
+          <option value="over-1000000">Over $1,000,000</option>
+        </select>
+        <span class="property-filter-chevron" aria-hidden="true"></span>
+      </label>
+      <label class="property-filter" for="property-filter-size">
+        <img class="property-filter-icon" src="./images/search/size.png" alt="" width="24" height="24">
+        <select class="property-filter-select" id="property-filter-size" name="size" aria-label="Property Size" data-js-property-filter="size">
+          <option value="">Property Size</option>
+          <option value="under-1000">Under 1,000 sq ft</option>
+          <option value="1000-2000">1,000 – 2,000 sq ft</option>
+          <option value="over-2000">Over 2,000 sq ft</option>
+        </select>
+        <span class="property-filter-chevron" aria-hidden="true"></span>
+      </label>
+      <label class="property-filter" for="property-filter-year">
+        <img class="property-filter-icon" src="./images/search/year.png" alt="" width="24" height="24">
+        <select class="property-filter-select" id="property-filter-year" name="year" aria-label="Build Year" data-js-property-filter="year">
+          <option value="">Build Year</option>
+          <option value="2020">2020 or newer</option>
+          <option value="2010">2010 or newer</option>
+          <option value="before-2010">Before 2010</option>
+        </select>
+        <span class="property-filter-chevron" aria-hidden="true"></span>
+      </label>
+    </div>
+  </div>
+</main>
+</body>
+</html>

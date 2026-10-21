@@ -1,0 +1,145 @@
+.cta {
+	margin-top: 100px;
+	border-block: 1px solid var(--color-grey-15);
+	background-color: var(--color-grey-08);
+	background-image: url("../images/cta/cta-background.png");
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.cta-inner.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 100px;
+	padding-block: 100px;
+}
+
+.cta-content {
+	flex: 1;
+	min-width: 0;
+}
+
+.cta-title {
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.cta-description {
+	margin-top: 14px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.cta-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	padding: 18px 24px;
+	border: 1px solid var(--color-purple-60);
+	border-radius: 10px;
+	color: var(--color-absolute-white);
+	background-color: var(--color-purple-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.cta-button:focus-visible {
+	outline: 2px solid var(--color-purple-70);
+	outline-offset: 4px;
+}
+
+@media (max-width: 1440px) {
+	.cta-inner.container {
+		gap: 60px;
+		padding-block: 60px;
+	}
+
+	.cta-title {
+		font-size: 38px;
+	}
+
+	.cta-description {
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.cta-button {
+		padding: 14px 20px;
+		border-radius: 8px;
+		font-size: 14px;
+	}
+
+}
+
+@media (max-width: 960px) {
+	.cta {
+		margin-top: 80px;
+	}
+
+	.cta-inner.container {
+		gap: 40px;
+		padding-block: 50px;
+	}
+
+	.cta-title {
+		font-size: 32px;
+	}
+
+}
+
+@media (max-width: 760px) {
+	.cta-inner.container {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 30px;
+	}
+
+}
+
+@media (max-width: 600px) {
+	.cta {
+		background-image: url("../images/cta/cta-background.png"), url("../images/cta/cta-background.png");
+		background-position: left top, right bottom;
+		background-size: 980px auto;
+	}
+
+	.cta-inner.container {
+		padding-inline: 16px;
+	}
+
+	.cta-title {
+		font-size: 28px;
+	}
+
+	.cta-description {
+		margin-top: 6px;
+		font-size: 14px;
+	}
+
+}
+
+@media (hover: hover) {
+	.cta-button:hover {
+		border-color: var(--color-purple-65);
+		background-color: var(--color-purple-65);
+	}
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.cta-button {
+		transition: none;
+	}
+
+}
+

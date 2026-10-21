@@ -51,6 +51,8 @@
     rel="stylesheet"
     href="./css/pages/about.css"
   >
+  <link rel="stylesheet" href="./css/cta.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <script
     src="./js/burgerButton.js"
     defer
@@ -59,6 +61,7 @@
     src="./js/closeButton.js"
     defer
   ></script>
+  <script src="./js/footerSubscribe.js" defer></script>
   <title>About Us | Estatein</title>
 </head>
 <body>
@@ -192,6 +195,7 @@
   </div>
 </header>
 <main class="main container">
+  <div class="about-content container">
   <section
     class="about-hero"
     id="our-journey"
@@ -502,6 +506,597 @@
       </li>
     </ol>
   </section>
+
+  <section class="team" id="our-team" aria-labelledby="team-title">
+    <div class="team-header">
+      <img
+        class="team-sparkles"
+        src="./images/properties/sparkles.svg"
+        alt=""
+        width="69"
+        height="30"
+        loading="lazy"
+        decoding="async"
+      >
+      <h2 class="team-title" id="team-title">Meet the Estatein Team</h2>
+      <p class="team-description">
+        At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality.
+      </p>
+    </div>
+    <ul class="team-list">
+      <li class="team-item">
+        <article class="team-card" aria-labelledby="max-mitchell-name">
+          <div class="team-card-media">
+            <img
+              class="team-card-photo"
+              src="./images/about/max-mitchell-768.webp"
+              srcset="./images/about/max-mitchell-384.webp 384w, ./images/about/max-mitchell-768.webp 768w"
+              sizes="(max-width: 600px) calc(100vw - 74px), (max-width: 960px) calc(50vw - 94px), (max-width: 1440px) calc(25vw - 105px), (max-width: 1660px) calc(25vw - 100.5px), 315px"
+              alt="Max Mitchell"
+              width="768"
+              height="657"
+              loading="lazy"
+              decoding="async"
+            >
+            <a
+              class="team-card-social"
+              href="https://x.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Twitter"
+            >
+              <img src="./images/about/team-twitter.png" alt="" width="76" height="52" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="team-card-info">
+            <h3 class="team-card-name" id="max-mitchell-name">Max Mitchell</h3>
+            <p class="team-card-role">Founder</p>
+          </div>
+          <a class="team-card-contact" href="./contact.html" aria-label="Contact Estatein about Max Mitchell">
+            <span>Say Hello 👋</span>
+            <span class="team-card-send" aria-hidden="true">
+              <img src="./images/footer/send.png" alt="" width="24" height="24" loading="lazy" decoding="async">
+            </span>
+          </a>
+        </article>
+      </li>
+      <li class="team-item">
+        <article class="team-card" aria-labelledby="sarah-johnson-name">
+          <div class="team-card-media">
+            <img
+              class="team-card-photo"
+              src="./images/about/sarah-johnson-768.webp"
+              srcset="./images/about/sarah-johnson-384.webp 384w, ./images/about/sarah-johnson-768.webp 768w"
+              sizes="(max-width: 600px) calc(100vw - 74px), (max-width: 960px) calc(50vw - 94px), (max-width: 1440px) calc(25vw - 105px), (max-width: 1660px) calc(25vw - 100.5px), 315px"
+              alt="Sarah Johnson"
+              width="768"
+              height="657"
+              loading="lazy"
+              decoding="async"
+            >
+            <a
+              class="team-card-social"
+              href="https://x.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Twitter"
+            >
+              <img src="./images/about/team-twitter.png" alt="" width="76" height="52" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="team-card-info">
+            <h3 class="team-card-name" id="sarah-johnson-name">Sarah Johnson</h3>
+            <p class="team-card-role">Chief Real Estate Officer</p>
+          </div>
+          <a class="team-card-contact" href="./contact.html" aria-label="Contact Estatein about Sarah Johnson">
+            <span>Say Hello 👋</span>
+            <span class="team-card-send" aria-hidden="true">
+              <img src="./images/footer/send.png" alt="" width="24" height="24" loading="lazy" decoding="async">
+            </span>
+          </a>
+        </article>
+      </li>
+      <li class="team-item">
+        <article class="team-card" aria-labelledby="david-brown-name">
+          <div class="team-card-media">
+            <img
+              class="team-card-photo"
+              src="./images/about/david-brown-768.webp"
+              srcset="./images/about/david-brown-384.webp 384w, ./images/about/david-brown-768.webp 768w"
+              sizes="(max-width: 600px) calc(100vw - 74px), (max-width: 960px) calc(50vw - 94px), (max-width: 1440px) calc(25vw - 105px), (max-width: 1660px) calc(25vw - 100.5px), 315px"
+              alt="David Brown"
+              width="768"
+              height="657"
+              loading="lazy"
+              decoding="async"
+            >
+            <a
+              class="team-card-social"
+              href="https://x.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Twitter"
+            >
+              <img src="./images/about/team-twitter.png" alt="" width="76" height="52" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="team-card-info">
+            <h3 class="team-card-name" id="david-brown-name">David Brown</h3>
+            <p class="team-card-role">Head of Property Management</p>
+          </div>
+          <a class="team-card-contact" href="./contact.html" aria-label="Contact Estatein about David Brown">
+            <span>Say Hello 👋</span>
+            <span class="team-card-send" aria-hidden="true">
+              <img src="./images/footer/send.png" alt="" width="24" height="24" loading="lazy" decoding="async">
+            </span>
+          </a>
+        </article>
+      </li>
+      <li class="team-item">
+        <article class="team-card" aria-labelledby="michael-turner-name">
+          <div class="team-card-media">
+            <img
+              class="team-card-photo"
+              src="./images/about/michael-turner-768.webp"
+              srcset="./images/about/michael-turner-384.webp 384w, ./images/about/michael-turner-768.webp 768w"
+              sizes="(max-width: 600px) calc(100vw - 74px), (max-width: 960px) calc(50vw - 94px), (max-width: 1440px) calc(25vw - 105px), (max-width: 1660px) calc(25vw - 100.5px), 315px"
+              alt="Michael Turner"
+              width="768"
+              height="657"
+              loading="lazy"
+              decoding="async"
+            >
+            <a
+              class="team-card-social"
+              href="https://x.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Twitter"
+            >
+              <img src="./images/about/team-twitter.png" alt="" width="76" height="52" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="team-card-info">
+            <h3 class="team-card-name" id="michael-turner-name">Michael Turner</h3>
+            <p class="team-card-role">Legal Counsel</p>
+          </div>
+          <a class="team-card-contact" href="./contact.html" aria-label="Contact Estatein about Michael Turner">
+            <span>Say Hello 👋</span>
+            <span class="team-card-send" aria-hidden="true">
+              <img src="./images/footer/send.png" alt="" width="24" height="24" loading="lazy" decoding="async">
+            </span>
+          </a>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section class="clients" id="our-clients" aria-labelledby="clients-title">
+    <div class="clients-header">
+      <img
+        class="clients-sparkles"
+        src="./images/properties/sparkles.svg"
+        alt=""
+        width="69"
+        height="30"
+        loading="lazy"
+        decoding="async"
+      >
+      <h2 class="clients-title" id="clients-title">Our Valued Clients</h2>
+      <p class="clients-description">
+        At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving
+      </p>
+    </div>
+    <ul class="clients-list" tabindex="0" aria-label="Client cards, scroll horizontally to view more" data-js-clients-list>
+      <li class="clients-item">
+        <article class="client-card" aria-labelledby="abc-corporation-name">
+          <div class="client-card-header">
+            <div class="client-card-heading">
+              <p class="client-since">Since 2019</p>
+              <h3 class="client-name" id="abc-corporation-name">ABC Corporation</h3>
+            </div>
+            <button class="client-website" type="button" data-js-client-website="abc-corporation" aria-label="Visit ABC Corporation website">Visit Website</button>
+          </div>
+          <dl class="client-details">
+            <div class="client-detail">
+              <dt class="client-detail-label">
+                <img src="./images/about/client-domain.png" alt="" width="24" height="24" loading="lazy" decoding="async">
+                Domain
+              </dt>
+              <dd class="client-detail-value">Commercial Real Estate</dd>
+            </div>
+            <div class="client-detail">
+              <dt class="client-detail-label">
+                <img src="./images/about/client-category.png" alt="" width="24" height="24" loading="lazy" decoding="async">
+                Category
+              </dt>
+              <dd class="client-detail-value">Luxury Home Development</dd>
+            </div>
+          </dl>
+          <blockquote class="client-quote">
+            <p class="client-quote-label">What They Said 🤗</p>
+            <p class="client-quote-text">Estatein's expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.</p>
+          </blockquote>
+        </article>
+      </li>
+      <li class="clients-item">
+        <article class="client-card" aria-labelledby="greentech-enterprises-name">
+          <div class="client-card-header">
+            <div class="client-card-heading">
+              <p class="client-since">Since 2018</p>
+              <h3 class="client-name" id="greentech-enterprises-name">GreenTech Enterprises</h3>
+            </div>
+            <button class="client-website" type="button" data-js-client-website="greentech-enterprises" aria-label="Visit GreenTech Enterprises website">Visit Website</button>
+          </div>
+          <dl class="client-details">
+            <div class="client-detail">
+              <dt class="client-detail-label">
+                <img src="./images/about/client-domain.png" alt="" width="24" height="24" loading="lazy" decoding="async">
+                Domain
+              </dt>
+              <dd class="client-detail-value">Commercial Real Estate</dd>
+            </div>
+            <div class="client-detail">
+              <dt class="client-detail-label">
+                <img src="./images/about/client-category.png" alt="" width="24" height="24" loading="lazy" decoding="async">
+                Category
+              </dt>
+              <dd class="client-detail-value">Retail Space</dd>
+            </div>
+          </dl>
+          <blockquote class="client-quote">
+            <p class="client-quote-label">What They Said 🤗</p>
+            <p class="client-quote-text">Estatein's ability to identify prime retail locations helped us expand our brand presence. They are a trusted partner in our growth.</p>
+          </blockquote>
+        </article>
+      </li>
+    </ul>
+    <nav class="clients-pagination" aria-label="Client cards navigation">
+      <span class="clients-counter"><span class="clients-current" data-js-clients-current>01</span> of 02</span>
+      <button class="clients-arrow clients-arrow-prev" type="button" aria-label="Previous client" data-js-clients-prev disabled>
+        <img src="./images/properties/arrow-right.svg" alt="" width="24" height="24">
+      </button>
+      <button class="clients-arrow clients-arrow-next" type="button" aria-label="Next client" data-js-clients-next>
+        <img src="./images/properties/arrow-right.svg" alt="" width="24" height="24">
+      </button>
+    </nav>
+  </section>
+  </div>
+  <section class="cta">
+    <div class="cta-inner container">
+      <div class="cta-content">
+        <h2 class="cta-title">
+          Start Your Real Estate Journey Today
+        </h2>
+        <p class="cta-description">
+          Your dream property is just a click away. Whether you're looking for
+          a new home, a strategic investment, or expert real estate advice,
+          Estatein is here to assist you every step of the way. Take the first
+          step towards your real estate goals and explore our available properties
+          or get in touch with our team for personalized assistance.
+        </p>
+      </div>
+
+      <a
+        class="cta-button"
+        href="./properties.html"
+      >
+        Explore Properties
+      </a>
+    </div>
+  </section>
 </main>
+<footer class="footer container">
+  <div class="footer-inner container">
+    <div class="footer-brand">
+      <a
+        class="footer-logo"
+        href="./index.html"
+        aria-label="Estatein home"
+      >
+        <img
+          src="./images/logo/Logo.svg"
+          alt="Estatein"
+          width="160"
+          height="48"
+        >
+      </a>
+      <div
+        class="footer-subscribe"
+        role="group"
+        aria-label="Email subscription"
+      >
+        <img
+          class="footer-email-icon"
+          src="./images/footer/email.png"
+          alt=""
+          width="24"
+          height="24"
+        >
+        <input
+          class="footer-email"
+          id="footer-email"
+          name="email"
+          type="email"
+          required
+          autocomplete="email"
+          placeholder="Enter Your Email"
+          aria-label="Email address"
+          data-js-footer-email
+        >
+        <button
+          class="footer-send"
+          type="button"
+          aria-label="Subscribe by email"
+          data-js-footer-send
+        >
+          <img
+            src="./images/footer/send.png"
+            alt=""
+            width="24"
+            height="24"
+          >
+        </button>
+      </div>
+    </div>
+
+    <nav
+      class="footer-nav"
+      aria-label="Footer navigation"
+    >
+      <div class="footer-group footer-group-home">
+        <h3 class="footer-group-title">
+          <a href="./index.html">Home</a>
+        </h3>
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="./index.html#hero"
+            >Hero Section
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./index.html#features"
+            >Features
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./index.html#properties"
+            >Properties
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./index.html#testimonials"
+            >Testimonials
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./index.html#faqs"
+            >FAQ’s
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-about">
+        <h3 class="footer-group-title">
+          <a href="./about.html">About Us</a>
+        </h3>
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="./about.html#our-journey"
+            >Our Story
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./about.html#our-achievements"
+            >Our Works
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./about.html#estatein-experience"
+            >How It Works
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./about.html#our-team"
+            >Our Team
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./about.html#our-clients"
+            >Our Clients
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-properties">
+        <h3 class="footer-group-title">
+          <a href="./properties.html">Properties</a>
+        </h3>
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="./properties.html"
+            >Portfolio
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./properties.html"
+            >Categories
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-services">
+        <h3 class="footer-group-title">
+          <a href="./services.html">Services</a>
+        </h3>
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="./services.html"
+            >Valuation Mastery
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./services.html"
+            >Strategic Marketing
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./services.html"
+            >Negotiation Wizardry
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./services.html"
+            >Closing Success
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./services.html"
+            >Property Management
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-contact">
+        <h3 class="footer-group-title">
+          <a href="./contact.html">Contact Us</a>
+        </h3>
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="./contact.html"
+            >Contact Form
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./contact.html"
+            >Our Offices
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner container">
+      <div class="footer-legal">
+        <p class="footer-copyright">©2023 Estatein. All Rights Reserved.</p>
+        <button
+          class="footer-terms"
+          type="button"
+          data-js-footer-terms
+        >Terms &amp; Conditions
+        </button>
+      </div>
+      <ul
+        class="footer-socials"
+        aria-label="Social media"
+      >
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.facebook.com/"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/footer/facebook.png"
+              alt=""
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.linkedin.com/"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/footer/linkedin.png"
+              alt=""
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://x.com/"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/footer/twitter.png"
+              alt=""
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.youtube.com/"
+            aria-label="YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/footer/youtube.png"
+              alt=""
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
