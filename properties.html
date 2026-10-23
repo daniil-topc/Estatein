@@ -12,8 +12,12 @@
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/pages/properties.css">
+  <link rel="stylesheet" href="./css/cta.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <script src="./js/burgerButton.js" defer></script>
   <script src="./js/closeButton.js" defer></script>
+  <script src="./js/search.js" defer></script>
+  <script src="./js/footerSubscribe.js" defer></script>
   <title>Properties | Estatein</title>
 </head>
 <body>
@@ -226,6 +230,501 @@
       </label>
     </div>
   </div>
+  <section class="search-results container" aria-labelledby="search-results-title">
+    <h2 class="search-results-title" id="search-results-title">Discover a World of Possibilities</h2>
+    <p class="search-results-status" role="status" data-js-search-status></p>
+    <ul class="search-results-grid" aria-label="Properties matching your search" data-js-search-results></ul>
+  </section>
+
+  <section class="inquiry container" id="inquiry" aria-labelledby="inquiry-title">
+    <div class="inquiry-header">
+      <img class="inquiry-sparkles" src="./images/properties/sparkles.svg" alt="" width="69" height="30">
+      <h2 class="inquiry-title" id="inquiry-title">Let's Make it Happen</h2>
+      <p class="inquiry-description">
+        Ready to take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this exciting journey together.
+      </p>
+    </div>
+
+    <form class="inquiry-form" action="#" method="post">
+      <div class="inquiry-field">
+        <label class="inquiry-label" for="inquiry-first-name">First Name</label>
+        <input class="inquiry-control" id="inquiry-first-name" name="firstName" type="text" placeholder="Enter First Name" autocomplete="given-name" required>
+      </div>
+      <div class="inquiry-field">
+        <label class="inquiry-label" for="inquiry-last-name">Last Name</label>
+        <input class="inquiry-control" id="inquiry-last-name" name="lastName" type="text" placeholder="Enter Last Name" autocomplete="family-name" required>
+      </div>
+      <div class="inquiry-field">
+        <label class="inquiry-label" for="inquiry-email">Email</label>
+        <input class="inquiry-control" id="inquiry-email" name="email" type="email" placeholder="Enter your Email" autocomplete="email" required>
+      </div>
+      <div class="inquiry-field">
+        <label class="inquiry-label" for="inquiry-phone">Phone</label>
+        <input class="inquiry-control" id="inquiry-phone" name="phone" type="tel" placeholder="Enter Phone Number" autocomplete="tel">
+      </div>
+
+      <div class="inquiry-field">
+        <label class="inquiry-label" for="inquiry-location">Preferred Location</label>
+        <div class="inquiry-select">
+          <select class="inquiry-control" id="inquiry-location" name="location">
+            <option value="">Select Location</option>
+            <option value="new-york">New York</option>
+            <option value="los-angeles">Los Angeles</option>
+            <option value="chicago">Chicago</option>
+            <option value="houston">Houston</option>
+            <option value="miami">Miami</option>
+          </select>
+          <span class="inquiry-chevron" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="inquiry-field">
+        <label class="inquiry-label" for="inquiry-type">Property Type</label>
+        <div class="inquiry-select">
+          <select class="inquiry-control" id="inquiry-type" name="type">
+            <option value="">Select Property Type</option>
+            <option value="villa">Villa</option>
+            <option value="apartment">Apartment</option>
+            <option value="cottage">Cottage</option>
+            <option value="house">House</option>
+          </select>
+          <span class="inquiry-chevron" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="inquiry-field">
+        <label class="inquiry-label" for="inquiry-bathrooms">No. of Bathrooms</label>
+        <div class="inquiry-select">
+          <select class="inquiry-control" id="inquiry-bathrooms" name="bathrooms">
+            <option value="">Select no. of Bathrooms</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4+">4+</option>
+          </select>
+          <span class="inquiry-chevron" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="inquiry-field">
+        <label class="inquiry-label" for="inquiry-bedrooms">No. of Bedrooms</label>
+        <div class="inquiry-select">
+          <select class="inquiry-control" id="inquiry-bedrooms" name="bedrooms">
+            <option value="">Select no. of Bedrooms</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4+">4+</option>
+          </select>
+          <span class="inquiry-chevron" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="inquiry-field inquiry-field-half">
+        <label class="inquiry-label" for="inquiry-budget">Budget</label>
+        <div class="inquiry-select">
+          <select class="inquiry-control" id="inquiry-budget" name="budget">
+            <option value="">Select Budget</option>
+            <option value="under-500000">Under $500,000</option>
+            <option value="500000-1000000">$500,000 – $1,000,000</option>
+            <option value="over-1000000">Over $1,000,000</option>
+          </select>
+          <span class="inquiry-chevron" aria-hidden="true"></span>
+        </div>
+      </div>
+      <fieldset class="inquiry-field inquiry-field-half inquiry-contact">
+        <legend class="inquiry-label">Preferred Contact Method</legend>
+        <div class="inquiry-contact-options">
+          <label class="inquiry-contact-option">
+            <svg class="inquiry-contact-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+              <path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/>
+            </svg>
+            <span class="inquiry-contact-text">Enter Your Number</span>
+            <input class="inquiry-radio" type="radio" name="contactMethod" value="phone" checked>
+          </label>
+          <label class="inquiry-contact-option">
+            <svg class="inquiry-contact-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m3 7 9 6 9-6"/>
+            </svg>
+            <span class="inquiry-contact-text">Enter Your Email</span>
+            <input class="inquiry-radio" type="radio" name="contactMethod" value="email">
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="inquiry-field inquiry-field-full">
+        <label class="inquiry-label" for="inquiry-message">Message</label>
+        <textarea class="inquiry-control inquiry-message" id="inquiry-message" name="message" rows="6" placeholder="Enter your Message here.."></textarea>
+      </div>
+
+      <div class="inquiry-footer">
+        <label class="inquiry-agree">
+          <input class="inquiry-checkbox" type="checkbox" name="agree" required>
+          <span>I agree with <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></span>
+        </label>
+        <button class="inquiry-submit" type="submit">Send Your Message</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="cta">
+    <div class="cta-inner container">
+      <div class="cta-content">
+        <h2 class="cta-title">
+          Start Your Real Estate Journey Today
+        </h2>
+        <p class="cta-description">
+          Your dream property is just a click away. Whether you're looking for
+          a new home, a strategic investment, or expert real estate advice,
+          Estatein is here to assist you every step of the way. Take the first
+          step towards your real estate goals and explore our available properties
+          or get in touch with our team for personalized assistance.
+        </p>
+      </div>
+
+      <a
+        class="cta-button"
+        href="./properties.html"
+      >
+        Explore Properties
+      </a>
+    </div>
+  </section>
+
+  <template data-js-property-card-template>
+    <li class="search-results-item">
+      <article class="search-property-card" data-js-property-card>
+        <img
+          class="search-property-image"
+          sizes="(max-width: 600px) calc(100vw - 82px), (max-width: 960px) calc(50vw - 108px), (max-width: 1100px) calc(50vw - 156px), (max-width: 1440px) calc(33.3333vw - 128.6667px), (max-width: 1660px) calc(33.3333vw - 123.3333px), 430px"
+          alt=""
+          width="432"
+          height="318"
+          loading="lazy"
+          decoding="async"
+          data-js-property-image
+        >
+        <div class="search-property-description">
+          <h3 class="search-property-title" data-js-property-title></h3>
+          <p class="search-property-text" data-js-property-description></p>
+        </div>
+        <div class="search-property-price">
+          <span class="search-property-price-label">Price</span>
+          <strong class="search-property-price-value" data-js-property-price></strong>
+        </div>
+      </article>
+    </li>
+  </template>
 </main>
+<footer class="footer container">
+  <div class="footer-inner container">
+    <div class="footer-brand">
+      <a
+        class="footer-logo"
+        href="./index.html"
+        aria-label="Estatein home"
+      >
+        <img
+          src="./images/logo/Logo.svg"
+          alt="Estatein"
+          width="160"
+          height="48"
+        >
+      </a>
+      <div
+        class="footer-subscribe"
+        role="group"
+        aria-label="Email subscription"
+      >
+        <img
+          class="footer-email-icon"
+          src="./images/footer/email.png"
+          alt=""
+          width="24"
+          height="24"
+        >
+        <input
+          class="footer-email"
+          id="footer-email"
+          name="email"
+          type="email"
+          required
+          autocomplete="email"
+          placeholder="Enter Your Email"
+          aria-label="Email address"
+          data-js-footer-email
+        >
+        <button
+          class="footer-send"
+          type="button"
+          aria-label="Subscribe by email"
+          data-js-footer-send
+        >
+          <img
+            src="./images/footer/send.png"
+            alt=""
+            width="24"
+            height="24"
+          >
+        </button>
+      </div>
+    </div>
+
+    <nav
+      class="footer-nav"
+      aria-label="Footer navigation"
+    >
+      <div class="footer-group footer-group-home">
+        <h3 class="footer-group-title">
+          <a href="./index.html">Home</a>
+        </h3>
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="./index.html#hero"
+            >Hero Section
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./index.html#features"
+            >Features
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./index.html#properties"
+            >Properties
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./index.html#testimonials"
+            >Testimonials
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./index.html#faqs"
+            >FAQ’s
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-about">
+        <h3 class="footer-group-title">
+          <a href="./about.html">About Us</a>
+        </h3>
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="./about.html#our-journey"
+            >Our Story
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./about.html#our-achievements"
+            >Our Works
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./about.html#estatein-experience"
+            >How It Works
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./about.html#our-team"
+            >Our Team
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./about.html#our-clients"
+            >Our Clients
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-properties">
+        <h3 class="footer-group-title">
+          <a href="./properties.html">Properties</a>
+        </h3>
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="./properties.html"
+            >Portfolio
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./properties.html"
+            >Categories
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-services">
+        <h3 class="footer-group-title">
+          <a href="./services.html">Services</a>
+        </h3>
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="./services.html"
+            >Valuation Mastery
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./services.html"
+            >Strategic Marketing
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./services.html"
+            >Negotiation Wizardry
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./services.html"
+            >Closing Success
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./services.html"
+            >Property Management
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-group footer-group-contact">
+        <h3 class="footer-group-title">
+          <a href="./contact.html">Contact Us</a>
+        </h3>
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="./contact.html"
+            >Contact Form
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="./contact.html"
+            >Our Offices
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner container">
+      <div class="footer-legal">
+        <p class="footer-copyright">©2023 Estatein. All Rights Reserved.</p>
+        <button
+          class="footer-terms"
+          type="button"
+          data-js-footer-terms
+        >Terms &amp; Conditions
+        </button>
+      </div>
+      <ul
+        class="footer-socials"
+        aria-label="Social media"
+      >
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.facebook.com/"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/footer/facebook.png"
+              alt=""
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.linkedin.com/"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/footer/linkedin.png"
+              alt=""
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://x.com/"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/footer/twitter.png"
+              alt=""
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.youtube.com/"
+            aria-label="YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/footer/youtube.png"
+              alt=""
+              width="24"
+              height="24"
+            >
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 .main.container {
 	max-width: none;
-	padding: 0 0 100px;
+	padding: 0;
 }
 
 .properties-hero {
@@ -10,7 +10,9 @@
 }
 
 .properties-hero-inner.container,
-.property-search.container {
+.property-search.container,
+.search-results.container,
+.inquiry.container {
 	max-width: 1660px;
 	padding-block: 0;
 }
@@ -172,13 +174,367 @@
 	outline-offset: 4px;
 }
 
+.search-results.container {
+	margin-top: 100px;
+}
+
+.search-results-title {
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.search-results-status {
+	margin-top: 14px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.search-results-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 30px;
+	margin-top: 40px;
+}
+
+.search-results-grid:empty {
+	display: none;
+}
+
+.search-results-item {
+	min-width: 0;
+}
+
+.search-property-card {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	height: 100%;
+	padding: 40px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 12px;
+}
+
+.search-property-image {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 432 / 318;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.search-property-title {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.search-property-text {
+	margin-top: 6px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.search-property-price {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	margin-top: auto;
+}
+
+.search-property-price-label {
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.search-property-price-value {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.inquiry.container {
+	margin-top: 150px;
+}
+
+.main > .cta {
+	margin-top: 150px;
+}
+
+.inquiry-sparkles {
+	width: 69px;
+	height: 30px;
+	margin: -40px 0 10px -20px;
+}
+
+.inquiry-title {
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.inquiry-description {
+	max-width: 1380px;
+	margin-top: 14px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.inquiry-form {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 50px;
+	margin-top: 80px;
+	padding: 100px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 12px;
+}
+
+.inquiry-field {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	min-width: 0;
+}
+
+.inquiry-field-half {
+	grid-column: span 2;
+}
+
+.inquiry-field-full,
+.inquiry-footer {
+	grid-column: 1 / -1;
+}
+
+.inquiry-contact {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.inquiry-label {
+	padding: 0;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.inquiry-contact .inquiry-label {
+	margin-bottom: 16px;
+}
+
+.inquiry-control {
+	width: 100%;
+	padding: 24px 20px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 8px;
+	outline: 0;
+	color: var(--color-absolute-white);
+	background-color: var(--color-grey-10);
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	transition: border-color 0.2s ease;
+}
+
+.inquiry-control::placeholder {
+	color: var(--color-grey-40);
+	opacity: 1;
+}
+
+.inquiry-control:focus {
+	border-color: var(--color-purple-60);
+}
+
+.inquiry-message {
+	display: block;
+	resize: vertical;
+}
+
+.inquiry-select {
+	position: relative;
+}
+
+.inquiry-select .inquiry-control {
+	padding-right: 72px;
+	appearance: none;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+/* Пока выбран пустой пункт, текст выглядит как плейсхолдер. */
+.inquiry-select .inquiry-control:has(option[value=""]:checked) {
+	color: var(--color-grey-40);
+}
+
+.inquiry-chevron {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: var(--color-grey-15);
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+.inquiry-chevron::after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	margin-top: -4px;
+	border-right: 1.5px solid var(--color-absolute-white);
+	border-bottom: 1.5px solid var(--color-absolute-white);
+	transform: rotate(45deg);
+}
+
+.inquiry-contact-options {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.inquiry-contact-option {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-width: 0;
+	padding: 24px 20px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 8px;
+	background-color: var(--color-grey-10);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	cursor: pointer;
+	transition: border-color 0.2s ease;
+}
+
+.inquiry-contact-option:has(:checked) {
+	border-color: var(--color-purple-60);
+}
+
+.inquiry-contact-icon {
+	flex-shrink: 0;
+	width: 24px;
+	height: 24px;
+	fill: none;
+	stroke: var(--color-absolute-white);
+	stroke-width: 1.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.inquiry-contact-text {
+	flex: 1;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.inquiry-radio {
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	border: 1px solid var(--color-grey-30);
+	border-radius: 50%;
+	appearance: none;
+	background-color: var(--color-grey-08);
+	cursor: pointer;
+}
+
+.inquiry-radio:checked {
+	border-color: var(--color-purple-60);
+	background-color: var(--color-purple-60);
+	box-shadow: inset 0 0 0 4px var(--color-grey-10);
+}
+
+.inquiry-footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.inquiry-agree {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	cursor: pointer;
+}
+
+.inquiry-agree a {
+	color: inherit;
+	text-underline-offset: 3px;
+	transition: color 0.2s ease;
+}
+
+.inquiry-checkbox {
+	flex-shrink: 0;
+	width: 28px;
+	height: 28px;
+	margin: 0;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 6px;
+	appearance: none;
+	background-color: var(--color-grey-10);
+	cursor: pointer;
+}
+
+.inquiry-checkbox:checked {
+	border-color: var(--color-purple-60);
+	background: var(--color-purple-60) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12 5 5 9-10'/%3E%3C/svg%3E") center / 70% no-repeat;
+}
+
+.inquiry-submit {
+	padding: 18px 34px;
+	border: 1px solid var(--color-purple-60);
+	border-radius: 10px;
+	color: var(--color-absolute-white);
+	background-color: var(--color-purple-60);
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	cursor: pointer;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.inquiry-radio:focus-visible,
+.inquiry-checkbox:focus-visible,
+.inquiry-submit:focus-visible {
+	outline: 2px solid var(--color-purple-70);
+	outline-offset: 4px;
+}
+
 @media (max-width: 1440px) {
 	.properties-hero {
 		padding-block: 100px 120px;
 	}
 
 	.properties-hero-inner.container,
-	.property-search.container {
+	.property-search.container,
+	.search-results.container,
+	.inquiry.container {
 		padding-inline: 80px;
 	}
 
@@ -247,17 +603,140 @@
 		width: 28px;
 		height: 28px;
 	}
+
+	.search-results.container {
+		margin-top: 80px;
+	}
+
+	.search-results-title {
+		font-size: 38px;
+	}
+
+	.search-results-status {
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.search-results-grid {
+		gap: 24px;
+	}
+
+	.search-property-card {
+		gap: 24px;
+		padding: 30px;
+	}
+
+	.search-property-title,
+	.search-property-price-value {
+		font-size: 20px;
+	}
+
+	.search-property-text,
+	.search-property-price-label {
+		font-size: 16px;
+	}
+
+	.inquiry.container {
+		margin-top: 120px;
+	}
+
+	.main > .cta {
+		margin-top: 120px;
+	}
+
+	.inquiry-sparkles {
+		width: 54px;
+		height: 24px;
+		margin-left: -10px;
+	}
+
+	.inquiry-title {
+		font-size: 38px;
+	}
+
+	.inquiry-description {
+		max-width: 1160px;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.inquiry-form {
+		gap: 40px;
+		margin-top: 60px;
+		padding: 80px;
+	}
+
+	.inquiry-field {
+		gap: 14px;
+	}
+
+	.inquiry-label {
+		font-size: 18px;
+	}
+
+	.inquiry-contact .inquiry-label {
+		margin-bottom: 14px;
+	}
+
+	.inquiry-control,
+	.inquiry-contact-option {
+		padding: 18px 20px;
+		font-size: 16px;
+	}
+
+	.inquiry-select .inquiry-control {
+		padding-right: 60px;
+	}
+
+	.inquiry-chevron {
+		right: 16px;
+		width: 28px;
+		height: 28px;
+	}
+
+	.inquiry-contact-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.inquiry-agree {
+		font-size: 16px;
+	}
+
+	.inquiry-checkbox {
+		width: 24px;
+		height: 24px;
+		border-radius: 4px;
+	}
+
+	.inquiry-submit {
+		padding: 14px 24px;
+		border-radius: 8px;
+		font-size: 14px;
+	}
+
 }
 
 @media (max-width: 1100px) {
 	.property-search-filters {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
+
+	.search-results-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.inquiry-form {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
 }
 
 @media (max-width: 960px) {
 	.properties-hero-inner.container,
-	.property-search.container {
+	.property-search.container,
+	.search-results.container,
+	.inquiry.container {
 		padding-inline: 32px;
 	}
 
@@ -268,6 +747,32 @@
 	.properties-hero-title {
 		font-size: 32px;
 	}
+
+	.search-results.container {
+		margin-top: 60px;
+	}
+
+	.search-results-title {
+		font-size: 32px;
+	}
+
+	.inquiry.container {
+		margin-top: 100px;
+	}
+
+	.main > .cta {
+		margin-top: 100px;
+	}
+
+	.inquiry-title {
+		font-size: 32px;
+	}
+
+	.inquiry-form {
+		gap: 30px;
+		padding: 50px;
+	}
+
 }
 
 @media (max-width: 760px) {
@@ -293,12 +798,10 @@
 }
 
 @media (max-width: 600px) {
-	.main.container {
-		padding-bottom: 60px;
-	}
-
 	.properties-hero-inner.container,
-	.property-search.container {
+	.property-search.container,
+	.search-results.container,
+	.inquiry.container {
 		padding-inline: 16px;
 	}
 
@@ -336,17 +839,141 @@
 	.property-search-filters {
 		grid-template-columns: 1fr;
 	}
+
+	.search-results.container {
+		margin-top: 40px;
+	}
+
+	.search-results-title {
+		font-size: 28px;
+	}
+
+	.search-results-status {
+		font-size: 14px;
+	}
+
+	.search-results-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		margin-top: 24px;
+	}
+
+	.search-property-card {
+		gap: 20px;
+		padding: 24px;
+	}
+
+	.search-property-title {
+		font-size: 18px;
+	}
+
+	.search-property-text,
+	.search-property-price-label {
+		font-size: 14px;
+	}
+
+	.inquiry.container {
+		margin-top: 80px;
+	}
+
+	.main > .cta {
+		margin-top: 80px;
+	}
+
+	.inquiry-title {
+		font-size: 28px;
+	}
+
+	.inquiry-description {
+		font-size: 14px;
+	}
+
+	.inquiry-form {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		margin-top: 40px;
+		padding: 24px;
+	}
+
+	.inquiry-field-half {
+		grid-column: auto;
+	}
+
+	.inquiry-field {
+		gap: 10px;
+	}
+
+	.inquiry-label {
+		font-size: 16px;
+	}
+
+	.inquiry-contact .inquiry-label {
+		margin-bottom: 10px;
+	}
+
+	.inquiry-control,
+	.inquiry-contact-option {
+		padding: 16px;
+		font-size: 14px;
+	}
+
+	.inquiry-select .inquiry-control {
+		padding-right: 52px;
+	}
+
+	.inquiry-chevron {
+		right: 12px;
+	}
+
+	.inquiry-contact-options {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+
+	.inquiry-footer {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 20px;
+	}
+
+	.inquiry-agree {
+		font-size: 14px;
+	}
+
+	.inquiry-submit {
+		width: 100%;
+	}
+
 }
 
 @media (hover: hover) {
-	.property-search-button:hover {
+	.property-search-button:hover,
+	.inquiry-submit:hover {
 		border-color: var(--color-purple-65);
 		background-color: var(--color-purple-65);
+	}
+
+	.inquiry-control:hover,
+	.inquiry-contact-option:hover {
+		border-color: var(--color-grey-30);
+	}
+
+	.inquiry-control:focus,
+	.inquiry-contact-option:has(:checked) {
+		border-color: var(--color-purple-60);
+	}
+
+	.inquiry-agree a:hover {
+		color: var(--color-absolute-white);
 	}
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.property-search-button {
+	.property-search-button,
+	.inquiry-control,
+	.inquiry-contact-option,
+	.inquiry-agree a,
+	.inquiry-submit {
 		transition: none;
 	}
 }
