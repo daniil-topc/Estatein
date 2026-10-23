@@ -18,7 +18,7 @@ const properties = [
         imageName: 'metropolitan-haven',
         imageAlt: 'Light blue residential towers overlooking the waterfront',
         description: 'A chic and fully-furnished 2-bedroom apartment with panoramic city views.',
-        price: 550000ca
+        price: 550000
     },
     {
         name: 'Rustic Retreat Cottage',
