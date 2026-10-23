@@ -231,9 +231,67 @@
     </div>
   </div>
   <section class="search-results container" aria-labelledby="search-results-title">
-    <h2 class="search-results-title" id="search-results-title">Discover a World of Possibilities</h2>
-    <p class="search-results-status" role="status" data-js-search-status></p>
-    <ul class="search-results-grid" aria-label="Properties matching your search" data-js-search-results></ul>
+    <div class="search-results-header">
+      <img
+        class="search-results-sparkles"
+        src="./images/properties/sparkles.svg"
+        alt=""
+        width="69"
+        height="30"
+      >
+      <h2
+        class="search-results-title"
+        id="search-results-title"
+      >Discover a World of Possibilities
+      </h2>
+      <p class="search-results-description">
+        Our portfolio of properties is as diverse as your dreams. Explore the following categories to find the perfect property that resonates with your vision of home.
+      </p>
+    </div>
+    <p
+      class="search-results-status"
+      role="status"
+      data-js-search-status
+    ></p>
+    <ul
+      class="search-results-grid"
+      aria-label="Properties matching your search"
+      data-js-search-results
+    ></ul>
+
+    <div class="search-results-footer">
+      <nav
+        class="search-results-pagination"
+        aria-label="Search results pagination"
+      >
+        <span class="search-results-counter"><span class="search-results-current-page">01</span> of 10</span>
+        <button
+          class="search-results-arrow search-results-arrow-prev"
+          type="button"
+          aria-label="Previous properties"
+          disabled
+        >
+          <img
+            src="./images/properties/arrow-right.svg"
+            alt=""
+            width="24"
+            height="24"
+          >
+        </button>
+        <button
+          class="search-results-arrow search-results-arrow-next"
+          type="button"
+          aria-label="Next properties"
+        >
+          <img
+            src="./images/properties/arrow-right.svg"
+            alt=""
+            width="24"
+            height="24"
+          >
+        </button>
+      </nav>
+    </div>
   </section>
 
   <section class="inquiry container" id="inquiry" aria-labelledby="inquiry-title">
@@ -403,12 +461,32 @@
           data-js-property-image
         >
         <div class="search-property-description">
-          <h3 class="search-property-title" data-js-property-title></h3>
-          <p class="search-property-text" data-js-property-description></p>
+          <h3
+            class="search-property-title"
+            data-js-property-title
+          ></h3>
+          <p class="search-property-text">
+            <span data-js-property-description></span>
+            <a
+              class="search-property-read-more"
+              href="./property-details.html"
+            >Read More
+            </a>
+          </p>
         </div>
-        <div class="search-property-price">
-          <span class="search-property-price-label">Price</span>
-          <strong class="search-property-price-value" data-js-property-price></strong>
+        <div class="search-property-footer">
+          <div class="search-property-price">
+            <span class="search-property-price-label">Price</span>
+            <strong
+              class="search-property-price-value"
+              data-js-property-price
+            ></strong>
+          </div>
+          <a
+            class="search-property-button"
+            href="./property-details.html"
+          >View Property Details
+          </a>
         </div>
       </article>
     </li>
