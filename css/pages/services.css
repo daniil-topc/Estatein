@@ -193,6 +193,66 @@
 	transition: border-color 0.2s ease;
 }
 
+.investments.container {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+.investments .service-block-header {
+	padding-right: 0;
+}
+
+.investments-intro {
+	display: flex;
+	flex: 0 0 519px;
+	flex-direction: column;
+	gap: 50px;
+	min-width: 0;
+}
+
+.investments-cta {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 50px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 12px;
+	background: var(--color-grey-10) url("../../images/services/service-cta-pattern.png") left top / cover no-repeat;
+}
+
+.investments-cta-title {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.investments-cta-text {
+	margin: 0;
+	color: var(--color-white-90);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.investments-list {
+	display: grid;
+	flex: 1 1 0;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 10px;
+	min-width: 0;
+	margin: 0;
+	padding: 10px;
+	border-radius: 12px;
+	background: var(--color-grey-10);
+	list-style: none;
+}
+
+.investments-list .service-card {
+	background: var(--color-grey-08);
+}
+
 .services-feature-link:focus-visible,
 .service-cta-button:focus-visible {
 	outline: 2px solid var(--color-purple-70);
@@ -312,6 +372,37 @@
 		border-radius: 8px;
 		font-size: 14px;
 	}
+
+	.investments.container {
+		gap: 50px;
+	}
+
+	.investments-intro {
+		flex-basis: 412px;
+		gap: 40px;
+	}
+
+	.investments-cta {
+		gap: 20px;
+		padding: 40px;
+		border-radius: 10px;
+	}
+
+	.investments-cta-title {
+		font-size: 22px;
+	}
+
+	.investments-cta-text {
+		font-size: 16px;
+	}
+
+	.investments-cta-button {
+		border-radius: 10px;
+	}
+
+	.investments-list .service-card {
+		gap: 24px;
+	}
 }
 
 @media (max-width: 960px) {
@@ -342,6 +433,16 @@
 
 	.service-list {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.investments.container {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 40px;
+	}
+
+	.investments-intro {
+		flex-basis: auto;
 	}
 
 	.services-features {
@@ -431,6 +532,40 @@
 	.service-cta-title {
 		flex: none;
 		font-size: 20px;
+	}
+
+	.investments-intro {
+		gap: 30px;
+	}
+
+	.investments-cta {
+		gap: 20px;
+		padding: 24px;
+	}
+
+	.investments-cta-title {
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	.investments-cta-text {
+		font-size: 14px;
+	}
+
+	.investments-cta-button {
+		border-radius: 8px;
+	}
+
+	.investments-list {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.investments-list .service-card {
+		gap: 16px;
+	}
+
+	.investments-list .service-card-head {
+		gap: 12px;
 	}
 
 	.services-hero-description {
