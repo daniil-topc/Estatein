@@ -1,0 +1,30 @@
+<svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#ring-a)" />
+  <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#ring-b)" />
+  <rect x="10.5" y="10.5" width="61" height="61" rx="30.5" stroke="url(#ring-c)" />
+  <rect x="10.5" y="10.5" width="61" height="61" rx="30.5" stroke="url(#ring-d)" />
+  <g transform="translate(29 29) scale(0.5)" fill="#A685FA">
+    <path d="M24 48C10.7467 48 0 37.2533 0 24H24V48Z" />
+    <path d="M0 0C13.2533 0 24 10.7467 24 24H0V0Z" />
+    <path d="M24 48C37.2533 48 48 37.2533 48 24H24V48Z" />
+    <path d="M48 24C48 10.7467 37.2533 0 24 0V24H48Z" />
+  </g>
+  <defs>
+    <linearGradient id="ring-a" x1="6.75" y1="86.5" x2="85.75" y2="-5.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A685FA" />
+      <stop offset="0.323723" stop-color="#A685FA" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="ring-b" x1="81.75" y1="-10.5" x2="6.75" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A685FA" />
+      <stop offset="0.576615" stop-color="#A685FA" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="ring-c" x1="3.25" y1="13.5" x2="71.75" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A685FA" />
+      <stop offset="0.323723" stop-color="#A685FA" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="ring-d" x1="84.25" y1="86" x2="12.25" y2="35" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A685FA" />
+      <stop offset="0.576615" stop-color="#A685FA" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+</svg>

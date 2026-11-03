@@ -1,0 +1,25 @@
+<svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#ring-a)" />
+  <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#ring-b)" />
+  <rect x="10.5" y="10.5" width="61" height="61" rx="30.5" stroke="url(#ring-c)" />
+  <rect x="10.5" y="10.5" width="61" height="61" rx="30.5" stroke="url(#ring-d)" />
+  <path transform="translate(27 27) scale(1.1667)" fill-rule="evenodd" clip-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" fill="#A685FA" />
+  <defs>
+    <linearGradient id="ring-a" x1="6.75" y1="86.5" x2="85.75" y2="-5.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A685FA" />
+      <stop offset="0.323723" stop-color="#A685FA" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="ring-b" x1="81.75" y1="-10.5" x2="6.75" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A685FA" />
+      <stop offset="0.576615" stop-color="#A685FA" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="ring-c" x1="3.25" y1="13.5" x2="71.75" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A685FA" />
+      <stop offset="0.323723" stop-color="#A685FA" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="ring-d" x1="84.25" y1="86" x2="12.25" y2="35" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A685FA" />
+      <stop offset="0.576615" stop-color="#A685FA" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+</svg>

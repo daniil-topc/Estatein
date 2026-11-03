@@ -135,6 +135,11 @@
   border-color: var(--color-purple-60);
 }
 
+.header-contact[aria-current="page"] {
+  border-color: var(--color-purple-60);
+  background: var(--color-purple-60);
+}
+
 .header-burger,
 .dropdown-menu {
   display: none;

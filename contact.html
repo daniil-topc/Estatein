@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Estatein: email, phone, office locations and social media. We are here to help with your real estate questions.">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preload" as="font" type="font/woff2" href="./fonts/Urbanist-Variable.woff2" crossorigin>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/pages/contact.css">
+  <script src="./js/burgerButton.js" defer></script>
+  <script src="./js/closeButton.js" defer></script>
+  <title>Contact Us | Estatein</title>
+</head>
+<body>
+<header class="header container">
+  <div class="header-announcement">
+    <div class="header-announcement-content">
+      <span>✨ Discover Your Dream Property with Estatein</span>
+      <a href="./properties.html">Learn More</a>
+    </div>
+    <button
+      class="header-announcement-close"
+      type="button"
+      aria-label="Close announcement"
+    >
+      <img
+        src="./images/items/button-header.svg"
+        alt=""
+        width="32"
+        height="32"
+      >
+    </button>
+  </div>
+
+  <div class="header-inner">
+    <div class="header-main">
+      <div class="header-brand">
+        <a
+          class="header-logo"
+          href="./index.html"
+          aria-label="Estatein home"
+        >
+          <img
+            src="./images/logo/Logo.svg"
+            alt="Estatein"
+            width="160"
+            height="48"
+          >
+        </a>
+      </div>
+
+      <nav
+        class="header-nav"
+        aria-label="Main navigation"
+      >
+        <ul class="header-nav-list">
+          <li>
+            <a
+              class="header-nav-link"
+              href="./index.html"
+            >Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./about.html"
+            >About Us
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./properties.html"
+            >Properties
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./services.html"
+            >Services
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a
+          class="header-contact"
+          href="./contact.html" aria-current="page"
+        >Contact Us
+        </a>
+
+        <button
+          class="header-burger"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="site-dropdown-menu"
+          aria-expanded="false"
+          data-js-menu-toggle
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav
+      class="dropdown-menu"
+      id="site-dropdown-menu"
+      aria-label="Mobile navigation"
+      data-js-dropdown-menu
+    >
+      <ul class="dropdown-menu-list">
+        <li>
+          <a
+            href="./index.html"
+          >Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="./about.html"
+          >About Us
+          </a>
+        </li>
+        <li>
+          <a href="./properties.html">Properties</a>
+        </li>
+        <li>
+          <a href="./services.html">Services</a>
+        </li>
+        <li>
+          <a href="./contact.html" aria-current="page">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="main container">
+  <section class="contact-hero" id="contact-hero" aria-labelledby="contact-hero-title">
+    <div class="contact-hero-intro">
+      <div class="contact-hero-inner container">
+        <h1 class="contact-hero-title" id="contact-hero-title">Get in Touch with Estatein</h1>
+        <p class="contact-hero-description">
+          Welcome to Estatein's Contact Us page. We're here to assist you with any inquiries, requests, or feedback you may have. Whether you're looking to buy or sell a property, explore investment opportunities, or simply want to connect, we're just a message away. Reach out to us, and let's start a conversation.
+        </p>
+      </div>
+    </div>
+
+    <ul
+      class="contact-channels"
+      aria-label="Ways to contact Estatein"
+    >
+      <li class="contact-channel">
+        <img
+          class="contact-channel-icon"
+          src="./images/contact/email.svg"
+          alt=""
+          width="82"
+          height="82"
+        >
+        <a
+          class="contact-channel-link"
+          href="mailto:info@estatein.com"
+        >info@estatein.com</a>
+        <img
+          class="contact-channel-arrow"
+          src="./images/hero/arrow-up-right.svg"
+          alt=""
+          width="34"
+          height="34"
+        >
+      </li>
+      <li class="contact-channel">
+        <img
+          class="contact-channel-icon"
+          src="./images/contact/phone.svg"
+          alt=""
+          width="82"
+          height="82"
+        >
+        <a
+          class="contact-channel-link"
+          href="tel:+11234567890"
+        >+1 (123) 456-7890</a>
+        <img
+          class="contact-channel-arrow"
+          src="./images/hero/arrow-up-right.svg"
+          alt=""
+          width="34"
+          height="34"
+        >
+      </li>
+      <li class="contact-channel">
+        <img
+          class="contact-channel-icon"
+          src="./images/contact/location.svg"
+          alt=""
+          width="82"
+          height="82"
+        >
+        <a
+          class="contact-channel-link"
+          href="#offices"
+        >Main Headquarters</a>
+        <img
+          class="contact-channel-arrow"
+          src="./images/hero/arrow-up-right.svg"
+          alt=""
+          width="34"
+          height="34"
+        >
+      </li>
+      <li class="contact-channel">
+        <img
+          class="contact-channel-icon"
+          src="./images/contact/socials.svg"
+          alt=""
+          width="82"
+          height="82"
+        >
+        <ul
+          class="contact-channel-socials"
+          aria-label="Estatein on social media"
+        >
+          <li><a class="contact-channel-social" href="https://www.instagram.com/">Instagram</a></li>
+          <li><a class="contact-channel-social" href="https://www.linkedin.com/">LinkedIn</a></li>
+          <li><a class="contact-channel-social" href="https://www.facebook.com/">Facebook</a></li>
+        </ul>
+        <img
+          class="contact-channel-arrow"
+          src="./images/hero/arrow-up-right.svg"
+          alt=""
+          width="34"
+          height="34"
+        >
+      </li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
