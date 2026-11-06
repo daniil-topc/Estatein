@@ -401,6 +401,11 @@
 	background: var(--color-grey-08);
 }
 
+/* display: flex выше перебивает браузерное [hidden] { display: none } */
+.office-card[hidden] {
+	display: none;
+}
+
 .office-card-label {
 	margin: 0;
 	font-size: 18px;
