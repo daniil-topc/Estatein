@@ -245,6 +245,167 @@
       </li>
     </ul>
   </section>
+
+  <section class="connect container" id="connect" aria-labelledby="connect-title">
+    <div class="connect-header">
+      <img
+        class="connect-sparkles"
+        src="./images/properties/sparkles.svg"
+        alt=""
+        width="69"
+        height="30"
+      >
+      <h2 class="connect-title" id="connect-title">Let's Connect</h2>
+      <p class="connect-description">
+        We're excited to connect with you and learn more about your real estate goals. Use the form below to get in touch with Estatein. Whether you're a prospective client, partner, or simply curious about our services, we're here to answer your questions and provide the assistance you need.
+      </p>
+    </div>
+
+    <form
+      class="connect-form"
+      action="#"
+      method="post"
+    >
+      <div class="connect-field">
+        <label
+          class="connect-label"
+          for="connect-first-name"
+        >First Name</label>
+        <input
+          class="connect-control"
+          id="connect-first-name"
+          name="firstName"
+          type="text"
+          placeholder="Enter First Name"
+          autocomplete="given-name"
+          required
+        >
+      </div>
+      <div class="connect-field">
+        <label
+          class="connect-label"
+          for="connect-last-name"
+        >Last Name</label>
+        <input
+          class="connect-control"
+          id="connect-last-name"
+          name="lastName"
+          type="text"
+          placeholder="Enter Last Name"
+          autocomplete="family-name"
+          required
+        >
+      </div>
+      <div class="connect-field">
+        <label
+          class="connect-label"
+          for="connect-email"
+        >Email</label>
+        <input
+          class="connect-control"
+          id="connect-email"
+          name="email"
+          type="email"
+          placeholder="Enter your Email"
+          autocomplete="email"
+          required
+        >
+      </div>
+      <div class="connect-field">
+        <label
+          class="connect-label"
+          for="connect-phone"
+        >Phone</label>
+        <input
+          class="connect-control"
+          id="connect-phone"
+          name="phone"
+          type="tel"
+          placeholder="Enter Phone Number"
+          autocomplete="tel"
+        >
+      </div>
+      <div class="connect-field">
+        <label
+          class="connect-label"
+          for="connect-inquiry-type"
+        >Inquiry Type</label>
+        <div class="connect-select">
+          <select
+            class="connect-control"
+            id="connect-inquiry-type"
+            name="inquiryType"
+          >
+            <option value="">Select Inquiry Type</option>
+            <option value="buying">Buying a Property</option>
+            <option value="selling">Selling a Property</option>
+            <option value="renting">Renting</option>
+            <option value="management">Property Management</option>
+            <option value="investment">Investment Advice</option>
+            <option value="other">Other</option>
+          </select>
+          <span
+            class="connect-chevron"
+            aria-hidden="true"
+          ></span>
+        </div>
+      </div>
+      <div class="connect-field">
+        <label
+          class="connect-label"
+          for="connect-source"
+        >How Did You Hear About Us?</label>
+        <div class="connect-select">
+          <select
+            class="connect-control"
+            id="connect-source"
+            name="source"
+          >
+            <option value="">Select</option>
+            <option value="search">Search Engine</option>
+            <option value="social">Social Media</option>
+            <option value="referral">Friend or Referral</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+          </select>
+          <span
+            class="connect-chevron"
+            aria-hidden="true"
+          ></span>
+        </div>
+      </div>
+
+      <div class="connect-field connect-field-full">
+        <label
+          class="connect-label"
+          for="connect-message"
+        >Message</label>
+        <textarea
+          class="connect-control connect-message"
+          id="connect-message"
+          name="message"
+          rows="3"
+          placeholder="Enter your Message here.."
+        ></textarea>
+      </div>
+
+      <div class="connect-footer">
+        <label class="connect-agree">
+          <input
+            class="connect-checkbox"
+            type="checkbox"
+            name="agree"
+            required
+          >
+          <span>I agree with <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></span>
+        </label>
+        <button
+          class="connect-submit"
+          type="submit"
+        >Send Your Message</button>
+      </div>
+    </form>
+  </section>
 </main>
 </body>
 </html>

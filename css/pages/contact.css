@@ -116,6 +116,199 @@
 	outline-offset: 4px;
 }
 
+.connect.container {
+	max-width: 1660px;
+	margin-top: 150px;
+	padding-block: 0;
+}
+
+.connect-header {
+	padding-right: 300px;
+}
+
+.connect-sparkles {
+	display: block;
+	width: 69px;
+	height: 30px;
+	margin: -40px 0 10px -20px;
+}
+
+.connect-title {
+	margin: 0;
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.connect-description {
+	margin: 14px 0 0;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.connect-form {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 50px;
+	margin-top: 80px;
+	padding: 100px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 12px;
+}
+
+.connect-field {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	min-width: 0;
+}
+
+.connect-field-full,
+.connect-footer {
+	grid-column: 1 / -1;
+}
+
+.connect-label {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.connect-control {
+	width: 100%;
+	padding: 24px 20px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 8px;
+	outline: 0;
+	color: var(--color-absolute-white);
+	background-color: var(--color-grey-10);
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	transition: border-color 0.2s ease;
+}
+
+.connect-control::placeholder {
+	color: var(--color-grey-40);
+	opacity: 1;
+}
+
+.connect-control:focus {
+	border-color: var(--color-purple-60);
+}
+
+.connect-message {
+	display: block;
+	min-height: 138px;
+	resize: vertical;
+}
+
+.connect-select {
+	position: relative;
+}
+
+.connect-select .connect-control {
+	padding-right: 72px;
+	appearance: none;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+/* Пока выбран пустой пункт, текст выглядит как плейсхолдер. */
+.connect-select .connect-control:has(option[value=""]:checked) {
+	color: var(--color-grey-40);
+}
+
+.connect-chevron {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: var(--color-grey-15);
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+.connect-chevron::after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	margin-top: -4px;
+	border-right: 1.5px solid var(--color-absolute-white);
+	border-bottom: 1.5px solid var(--color-absolute-white);
+	transform: rotate(45deg);
+}
+
+.connect-footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.connect-agree {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	cursor: pointer;
+}
+
+.connect-agree a {
+	color: inherit;
+	text-underline-offset: 3px;
+	transition: color 0.2s ease;
+}
+
+.connect-checkbox {
+	flex-shrink: 0;
+	width: 28px;
+	height: 28px;
+	margin: 0;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 6px;
+	appearance: none;
+	background-color: var(--color-grey-10);
+	cursor: pointer;
+}
+
+.connect-checkbox:checked {
+	border-color: var(--color-purple-60);
+	background: var(--color-purple-60) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12 5 5 9-10'/%3E%3C/svg%3E") center / 70% no-repeat;
+}
+
+.connect-submit {
+	padding: 18px 34px;
+	border: 1px solid var(--color-purple-60);
+	border-radius: 10px;
+	color: var(--color-absolute-white);
+	background-color: var(--color-purple-60);
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	cursor: pointer;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.connect-checkbox:focus-visible,
+.connect-submit:focus-visible {
+	outline: 2px solid var(--color-purple-70);
+	outline-offset: 4px;
+}
+
 @media (max-width: 1440px) {
 	.contact-hero-intro {
 		padding-block: 100px;
@@ -166,6 +359,82 @@
 		width: 24px;
 		height: 24px;
 	}
+
+	.connect.container {
+		margin-top: 120px;
+		padding-inline: 80px;
+	}
+
+	.connect-sparkles {
+		width: 54px;
+		height: 24px;
+		margin-left: -10px;
+	}
+
+	.connect-title {
+		font-size: 38px;
+	}
+
+	.connect-description {
+		max-width: 1160px;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.connect-form {
+		gap: 40px;
+		margin-top: 60px;
+		padding: 80px;
+	}
+
+	.connect-field {
+		gap: 14px;
+	}
+
+	.connect-label {
+		font-size: 18px;
+	}
+
+	.connect-control {
+		padding: 18px 20px;
+		font-size: 16px;
+	}
+
+	.connect-message {
+		min-height: 120px;
+	}
+
+	.connect-select .connect-control {
+		padding-right: 60px;
+	}
+
+	.connect-chevron {
+		right: 16px;
+		width: 28px;
+		height: 28px;
+	}
+
+	.connect-agree {
+		font-size: 16px;
+	}
+
+	.connect-checkbox {
+		width: 24px;
+		height: 24px;
+		border-radius: 4px;
+	}
+
+	.connect-submit {
+		padding: 14px 24px;
+		border-radius: 8px;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.connect-form {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
 }
 
 @media (max-width: 960px) {
@@ -188,6 +457,24 @@
 
 	.contact-channel {
 		flex-basis: calc(50% - 5px);
+	}
+
+	.connect.container {
+		margin-top: 100px;
+		padding-inline: 32px;
+	}
+
+	.connect-header {
+		padding-right: 0;
+	}
+
+	.connect-title {
+		font-size: 32px;
+	}
+
+	.connect-form {
+		gap: 30px;
+		padding: 50px;
 	}
 }
 
@@ -233,6 +520,67 @@
 		width: 20px;
 		height: 20px;
 	}
+
+	.connect.container {
+		margin-top: 80px;
+		padding-inline: 16px;
+	}
+
+	.connect-sparkles {
+		width: 46px;
+		height: 20px;
+		margin: -19px 0 -1px -8px;
+	}
+
+	.connect-title {
+		font-size: 28px;
+	}
+
+	.connect-description {
+		font-size: 14px;
+	}
+
+	.connect-form {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		margin-top: 40px;
+		padding: 24px;
+	}
+
+	.connect-field {
+		gap: 10px;
+	}
+
+	.connect-label {
+		font-size: 16px;
+	}
+
+	.connect-control {
+		padding: 16px;
+		font-size: 14px;
+	}
+
+	.connect-select .connect-control {
+		padding-right: 52px;
+	}
+
+	.connect-chevron {
+		right: 12px;
+	}
+
+	.connect-footer {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 20px;
+	}
+
+	.connect-agree {
+		font-size: 14px;
+	}
+
+	.connect-submit {
+		width: 100%;
+	}
 }
 
 @media (hover: hover) {
@@ -243,10 +591,30 @@
 	.contact-channel-social:hover {
 		color: var(--color-purple-75);
 	}
+
+	.connect-control:hover {
+		border-color: var(--color-grey-30);
+	}
+
+	.connect-control:focus {
+		border-color: var(--color-purple-60);
+	}
+
+	.connect-agree a:hover {
+		color: var(--color-absolute-white);
+	}
+
+	.connect-submit:hover {
+		border-color: var(--color-purple-65);
+		background-color: var(--color-purple-65);
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.contact-channel {
+	.contact-channel,
+	.connect-control,
+	.connect-agree a,
+	.connect-submit {
 		transition: none;
 	}
 }
