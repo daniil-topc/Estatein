@@ -73,6 +73,11 @@
 	overflow-wrap: anywhere;
 }
 
+.contact-channel-social {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
 /* Whole card is clickable for single-link channels */
 .contact-channel-link::after {
 	content: "";
