@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seaside Serenity Villa in Malibu, California: photos, features, pricing details and inquiry form from Estatein.">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preload" as="font" type="font/woff2" href="./fonts/Urbanist-Variable.woff2" crossorigin>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/pages/property-details.css">
+  <script src="./js/burgerButton.js" defer></script>
+  <script src="./js/closeButton.js" defer></script>
+  <title>Seaside Serenity Villa | Estatein</title>
+</head>
+<body>
+<header class="header container">
+  <div class="header-announcement">
+    <div class="header-announcement-content">
+      <span>✨ Discover Your Dream Property with Estatein</span>
+      <a href="./properties.html">Learn More</a>
+    </div>
+    <button
+      class="header-announcement-close"
+      type="button"
+      aria-label="Close announcement"
+    >
+      <img
+        src="./images/items/button-header.svg"
+        alt=""
+        width="32"
+        height="32"
+      >
+    </button>
+  </div>
+
+  <div class="header-inner">
+    <div class="header-main">
+      <div class="header-brand">
+        <a
+          class="header-logo"
+          href="./index.html"
+          aria-label="Estatein home"
+        >
+          <img
+            src="./images/logo/Logo.svg"
+            alt="Estatein"
+            width="160"
+            height="48"
+          >
+        </a>
+      </div>
+
+      <nav
+        class="header-nav"
+        aria-label="Main navigation"
+      >
+        <ul class="header-nav-list">
+          <li>
+            <a
+              class="header-nav-link"
+              href="./index.html"
+            >Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./about.html"
+            >About Us
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./properties.html" aria-current="page"
+            >Properties
+            </a>
+          </li>
+          <li>
+            <a
+              class="header-nav-link"
+              href="./services.html"
+            >Services
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a
+          class="header-contact"
+          href="./contact.html"
+        >Contact Us
+        </a>
+
+        <button
+          class="header-burger"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="site-dropdown-menu"
+          aria-expanded="false"
+          data-js-menu-toggle
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav
+      class="dropdown-menu"
+      id="site-dropdown-menu"
+      aria-label="Mobile navigation"
+      data-js-dropdown-menu
+    >
+      <ul class="dropdown-menu-list">
+        <li>
+          <a
+            href="./index.html"
+          >Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="./about.html"
+          >About Us
+          </a>
+        </li>
+        <li>
+          <a href="./properties.html" aria-current="page">Properties</a>
+        </li>
+        <li>
+          <a href="./services.html">Services</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="main container">
+  <section class="property-hero container" id="property-hero" aria-labelledby="property-hero-title">
+    <div class="property-hero-header">
+      <div class="property-hero-heading">
+        <h1 class="property-hero-title" id="property-hero-title">Seaside Serenity Villa</h1>
+        <p class="property-hero-location">
+          <svg class="property-hero-location-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" /></svg>
+          Malibu, California
+        </p>
+      </div>
+      <p class="property-hero-price">
+        <span class="property-hero-price-label">Price</span>
+        <span class="property-hero-price-value">$1,250,000</span>
+      </p>
+    </div>
+
+    <div class="property-gallery">
+      <ul class="property-gallery-thumbs" aria-label="Property photos">
+        <li>
+          <button
+            class="property-gallery-thumb"
+            type="button"
+            aria-label="Show photo 1 of 9"
+            aria-pressed="true"
+            data-js-gallery-thumb
+          >
+            <img
+              src="./images/property-details/villa-pool-288.webp"
+              alt=""
+              width="288"
+              height="188"
+            >
+          </button>
+        </li>
+        <li>
+          <button
+            class="property-gallery-thumb"
+            type="button"
+            aria-label="Show photo 2 of 9"
+            aria-pressed="false"
+            data-js-gallery-thumb
+          >
+            <img
+              src="./images/property-details/villa-evening-288.webp"
+              alt=""
+              width="288"
+              height="188"
+            >
+          </button>
+        </li>
+        <li>
+          <button
+            class="property-gallery-thumb"
+            type="button"
+            aria-label="Show photo 3 of 9"
+            aria-pressed="false"
+            data-js-gallery-thumb
+          >
+            <img
+              src="./images/property-details/pool-terrace-288.webp"
+              alt=""
+              width="288"
+              height="188"
+            >
+          </button>
+        </li>
+        <li>
+          <button
+            class="property-gallery-thumb"
+            type="button"
+            aria-label="Show photo 4 of 9"
+            aria-pressed="false"
+            data-js-gallery-thumb
+          >
+            <img
+              src="./images/property-details/villa-garden-288.webp"
+              alt=""
+              width="288"
+              height="188"
+            >
+          </button>
+        </li>
+        <li>
+          <button
+            class="property-gallery-thumb"
+            type="button"
+            aria-label="Show photo 5 of 9"
+            aria-pressed="false"
+            data-js-gallery-thumb
+          >
+            <img
+              src="./images/property-details/living-room-dark-288.webp"
+              alt=""
+              width="288"
+              height="188"
+            >
+          </button>
+        </li>
+        <li>
+          <button
+            class="property-gallery-thumb"
+            type="button"
+            aria-label="Show photo 6 of 9"
+            aria-pressed="false"
+            data-js-gallery-thumb
+          >
+            <img
+              src="./images/property-details/living-room-bright-288.webp"
+              alt=""
+              width="288"
+              height="188"
+            >
+          </button>
+        </li>
+        <li>
+          <button
+            class="property-gallery-thumb"
+            type="button"
+            aria-label="Show photo 7 of 9"
+            aria-pressed="false"
+            data-js-gallery-thumb
+          >
+            <img
+              src="./images/property-details/dining-room-288.webp"
+              alt=""
+              width="288"
+              height="188"
+            >
+          </button>
+        </li>
+        <li>
+          <button
+            class="property-gallery-thumb"
+            type="button"
+            aria-label="Show photo 8 of 9"
+            aria-pressed="false"
+            data-js-gallery-thumb
+          >
+            <img
+              src="./images/property-details/lounge-288.webp"
+              alt=""
+              width="288"
+              height="188"
+            >
+          </button>
+        </li>
+        <li>
+          <button
+            class="property-gallery-thumb"
+            type="button"
+            aria-label="Show photo 9 of 9"
+            aria-pressed="false"
+            data-js-gallery-thumb
+          >
+            <img
+              src="./images/property-details/bedroom-288.webp"
+              alt=""
+              width="288"
+              height="188"
+            >
+          </button>
+        </li>
+      </ul>
+
+      <div class="property-gallery-slides">
+        <img
+          class="property-gallery-slide"
+          src="./images/property-details/hero-villa-733.webp"
+          srcset="./images/property-details/hero-villa-733.webp 733w, ./images/property-details/hero-villa-1080.webp 1080w"
+          sizes="(max-width: 960px) 100vw, 733px"
+          alt="Seaside Serenity Villa: white two-storey house with a pool"
+          width="733"
+          height="583"
+        >
+        <img
+          class="property-gallery-slide property-gallery-slide-second"
+          src="./images/property-details/hero-living-room-733.webp"
+          srcset="./images/property-details/hero-living-room-733.webp 733w, ./images/property-details/hero-living-room-1080.webp 1080w"
+          sizes="(max-width: 960px) 100vw, 733px"
+          alt="Seaside Serenity Villa: living room with a dining area"
+          width="733"
+          height="583"
+        >
+      </div>
+
+      <div class="property-gallery-controls">
+        <button
+          class="property-gallery-arrow property-gallery-arrow-prev"
+          type="button"
+          aria-label="Previous photos"
+          data-js-gallery-prev
+          disabled
+        >
+          <img
+            src="./images/properties/arrow-right.svg"
+            alt=""
+            width="30"
+            height="30"
+          >
+        </button>
+        <div class="property-gallery-dots" aria-hidden="true">
+          <span class="property-gallery-dot is-active"></span>
+          <span class="property-gallery-dot"></span>
+          <span class="property-gallery-dot"></span>
+          <span class="property-gallery-dot"></span>
+          <span class="property-gallery-dot"></span>
+          <span class="property-gallery-dot"></span>
+        </div>
+        <button
+          class="property-gallery-arrow"
+          type="button"
+          aria-label="Next photos"
+          data-js-gallery-next
+        >
+          <img
+            src="./images/properties/arrow-right.svg"
+            alt=""
+            width="30"
+            height="30"
+          >
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
