@@ -21,4 +21,4 @@ Observed on https://estatein-agency.webflow.io/properties/seaside-serenity-villa
 - `hero-villa`: https://cdn.prod.website-files.com/66fc1fd9132d7070227be90b/67090468e1f263cbf8144e6e_1Image-p-1080.png
 - `hero-living-room`: https://cdn.prod.website-files.com/66fc1fd9132d7070227be90b/670904683950511b9acc37c8_2Image-p-1080.png
 
-Saved as WebP (quality 82) at 1080 × 859 and 733 × 583.
+Saved as WebP (quality 82) at 1080 × 859. No `srcset` on the slides on purpose: the gallery JS swaps `src`, and a `srcset` would override it.

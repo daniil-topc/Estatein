@@ -199,7 +199,7 @@
 }
 
 .property-gallery-dot {
-	width: 20px;
+	width: 12px;
 	height: 3px;
 	border-radius: 2px;
 	background: var(--color-grey-20);
@@ -268,7 +268,7 @@
 	}
 
 	.property-gallery-dot {
-		width: 16px;
+		width: 10px;
 	}
 }
 
