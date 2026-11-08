@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69" height="30" viewBox="0 0 69 30" fill="none">
+  <!-- Те же звёзды, что в images/properties/sparkles.svg, но вырезы прозрачные: подходят для любого фона -->
+  <defs>
+    <mask id="sparkle-lg" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+      <rect width="30" height="30" fill="#fff" />
+      <circle cx="0" cy="30" r="15" fill="#000" />
+      <circle cx="30" cy="30" r="15" fill="#000" />
+      <circle cx="0" cy="0" r="15" fill="#000" />
+      <circle cx="30" cy="0" r="15" fill="#000" />
+    </mask>
+    <mask id="sparkle-md" maskUnits="userSpaceOnUse" x="36" y="6" width="18" height="18">
+      <rect x="36" y="6" width="18" height="18" fill="#fff" />
+      <circle cx="36" cy="24" r="9" fill="#000" />
+      <circle cx="54" cy="24" r="9" fill="#000" />
+      <circle cx="36" cy="6" r="9" fill="#000" />
+      <circle cx="54" cy="6" r="9" fill="#000" />
+    </mask>
+    <mask id="sparkle-sm" maskUnits="userSpaceOnUse" x="60" y="10.8" width="8.4" height="8.4">
+      <rect x="60" y="10.8" width="8.4" height="8.4" fill="#fff" />
+      <circle cx="60" cy="19.2" r="4.2" fill="#000" />
+      <circle cx="68.4" cy="19.2" r="4.2" fill="#000" />
+      <circle cx="60" cy="10.8" r="4.2" fill="#000" />
+      <circle cx="68.4" cy="10.8" r="4.2" fill="#000" />
+    </mask>
+  </defs>
+  <circle cx="15" cy="15" r="15" fill="#666666" mask="url(#sparkle-lg)" />
+  <circle cx="45" cy="15" r="9" fill="#333333" mask="url(#sparkle-md)" />
+  <circle cx="64.2" cy="15" r="4.2" fill="#333333" mask="url(#sparkle-sm)" />
+</svg>
