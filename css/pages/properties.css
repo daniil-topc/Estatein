@@ -184,6 +184,21 @@
 	line-height: 1.5;
 }
 
+.search-results-sparkles {
+	width: 69px;
+	height: 30px;
+	margin: -40px 0 10px -20px;
+}
+
+.search-results-description {
+	max-width: 1380px;
+	margin-top: 14px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
 .search-results-status {
 	margin-top: 14px;
 	color: var(--color-grey-60);
@@ -239,11 +254,23 @@
 	line-height: 1.5;
 }
 
+.search-property-read-more {
+	color: var(--color-absolute-white);
+	text-underline-offset: 3px;
+}
+
+.search-property-footer {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	margin-top: auto;
+}
+
 .search-property-price {
 	display: flex;
 	flex-direction: column;
 	gap: 2px;
-	margin-top: auto;
+	flex: 0 0 auto;
 }
 
 .search-property-price-label {
@@ -256,6 +283,90 @@
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 1.5;
+}
+
+.search-property-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 0;
+	min-width: 0;
+	padding: 18px 24px;
+	border: 1px solid var(--color-purple-60);
+	border-radius: 10px;
+	color: var(--color-absolute-white);
+	background-color: var(--color-purple-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.search-results-footer {
+	margin-top: 50px;
+	padding-top: 20px;
+	border-top: 1px solid var(--color-grey-15);
+}
+
+.search-results-pagination {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.search-results-counter {
+	margin-right: auto;
+	color: var(--color-grey-60);
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.5;
+	white-space: nowrap;
+}
+
+.search-results-current-page {
+	color: var(--color-absolute-white);
+}
+
+.search-results-arrow {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 58px;
+	width: 58px;
+	height: 58px;
+	padding: 0;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 50%;
+	background-color: var(--color-grey-10);
+	cursor: pointer;
+	transition: border-color 0.2s ease;
+}
+
+.search-results-arrow img {
+	width: 24px;
+	height: 24px;
+}
+
+.search-results-arrow-prev img {
+	transform: rotate(180deg);
+}
+
+.search-results-arrow:disabled {
+	background-color: var(--color-grey-08);
+	cursor: default;
+}
+
+.search-results-arrow:disabled img {
+	opacity: 0.35;
+}
+
+.search-property-read-more:focus-visible,
+.search-property-button:focus-visible,
+.search-results-arrow:focus-visible {
+	outline: 2px solid var(--color-purple-70);
+	outline-offset: 4px;
 }
 
 .inquiry.container {
@@ -612,6 +723,18 @@
 		font-size: 38px;
 	}
 
+	.search-results-sparkles {
+		width: 54px;
+		height: 24px;
+		margin-left: -10px;
+	}
+
+	.search-results-description {
+		max-width: 1160px;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
 	.search-results-status {
 		margin-top: 10px;
 		font-size: 16px;
@@ -634,6 +757,35 @@
 	.search-property-text,
 	.search-property-price-label {
 		font-size: 16px;
+	}
+
+	.search-property-footer {
+		gap: 40px;
+	}
+
+	.search-property-button {
+		padding: 14px 20px;
+		border-radius: 8px;
+		font-size: 14px;
+	}
+
+	.search-results-footer {
+		margin-top: 40px;
+	}
+
+	.search-results-counter {
+		font-size: 16px;
+	}
+
+	.search-results-arrow {
+		flex-basis: 44px;
+		width: 44px;
+		height: 44px;
+	}
+
+	.search-results-arrow img {
+		width: 20px;
+		height: 20px;
 	}
 
 	.inquiry.container {
@@ -872,6 +1024,33 @@
 		font-size: 14px;
 	}
 
+	.search-results-description {
+		margin-top: 6px;
+		font-size: 14px;
+	}
+
+	.search-property-footer {
+		gap: 30px;
+	}
+
+	.search-results-footer {
+		margin-top: 30px;
+	}
+
+	.search-results-pagination {
+		justify-content: center;
+	}
+
+	.search-results-counter {
+		order: 1;
+		margin-right: 0;
+		font-size: 14px;
+	}
+
+	.search-results-arrow-next {
+		order: 2;
+	}
+
 	.inquiry.container {
 		margin-top: 80px;
 	}
@@ -966,9 +1145,24 @@
 	.inquiry-agree a:hover {
 		color: var(--color-absolute-white);
 	}
+
+	.search-property-button:hover {
+		border-color: var(--color-purple-65);
+		background-color: var(--color-purple-65);
+	}
+
+	.search-property-read-more:hover {
+		color: var(--color-purple-70);
+	}
+
+	.search-results-arrow:not(:disabled):hover {
+		border-color: var(--color-purple-60);
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {
+	.search-property-button,
+	.search-results-arrow,
 	.property-search-button,
 	.inquiry-control,
 	.inquiry-contact-option,
