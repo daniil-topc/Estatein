@@ -439,6 +439,152 @@
       </ul>
     </div>
   </section>
+
+  <section
+    class="property-inquiry container"
+    id="property-inquiry"
+    aria-labelledby="property-inquiry-title"
+  >
+    <div class="property-inquiry-header">
+      <img
+        class="property-inquiry-sparkles"
+        src="./images/properties/sparkles.svg"
+        alt=""
+        width="69"
+        height="30"
+      >
+      <h2
+        class="property-inquiry-title"
+        id="property-inquiry-title"
+      >Inquire About Seaside Serenity Villa
+      </h2>
+      <p class="property-inquiry-description">
+        Interested in this property? Fill out the form below, and our real estate experts will get back to you with more details, including scheduling a viewing and answering any questions you may have.
+      </p>
+    </div>
+
+    <form
+      class="property-inquiry-form"
+      action="#"
+      method="post"
+    >
+      <div class="property-inquiry-field">
+        <label
+          class="property-inquiry-label"
+          for="property-inquiry-first-name"
+        >First Name
+        </label>
+        <input
+          class="property-inquiry-control"
+          id="property-inquiry-first-name"
+          type="text"
+          name="firstName"
+          placeholder="Enter First Name"
+          autocomplete="given-name"
+          required
+        >
+      </div>
+      <div class="property-inquiry-field">
+        <label
+          class="property-inquiry-label"
+          for="property-inquiry-last-name"
+        >Last Name
+        </label>
+        <input
+          class="property-inquiry-control"
+          id="property-inquiry-last-name"
+          type="text"
+          name="lastName"
+          placeholder="Enter Last Name"
+          autocomplete="family-name"
+          required
+        >
+      </div>
+      <div class="property-inquiry-field">
+        <label
+          class="property-inquiry-label"
+          for="property-inquiry-email"
+        >Email
+        </label>
+        <input
+          class="property-inquiry-control"
+          id="property-inquiry-email"
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          autocomplete="email"
+          required
+        >
+      </div>
+      <div class="property-inquiry-field">
+        <label
+          class="property-inquiry-label"
+          for="property-inquiry-phone"
+        >Phone
+        </label>
+        <input
+          class="property-inquiry-control"
+          id="property-inquiry-phone"
+          type="tel"
+          name="phone"
+          placeholder="Enter Phone Number"
+          autocomplete="tel"
+          required
+        >
+      </div>
+
+      <div class="property-inquiry-field property-inquiry-field-full">
+        <label
+          class="property-inquiry-label"
+          for="property-inquiry-property"
+        >Selected Property
+        </label>
+        <div class="property-inquiry-property">
+          <input
+            class="property-inquiry-control"
+            id="property-inquiry-property"
+            type="text"
+            name="property"
+            value="Seaside Serenity Villa, Malibu, California"
+            readonly
+          >
+          <svg class="property-inquiry-property-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.980 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" /></svg>
+        </div>
+      </div>
+
+      <div class="property-inquiry-field property-inquiry-field-full">
+        <label
+          class="property-inquiry-label"
+          for="property-inquiry-message"
+        >Message
+        </label>
+        <textarea
+          class="property-inquiry-control property-inquiry-message"
+          id="property-inquiry-message"
+          name="message"
+          rows="4"
+          placeholder="Enter your Message here.."
+        ></textarea>
+      </div>
+
+      <div class="property-inquiry-footer">
+        <label class="property-inquiry-agree">
+          <input
+            class="property-inquiry-checkbox"
+            type="checkbox"
+            name="agree"
+            required
+          >
+          <span>I agree with <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></span>
+        </label>
+        <button
+          class="property-inquiry-submit"
+          type="submit"
+        >Send Your Message
+        </button>
+      </div>
+    </form>
+  </section>
 </main>
 </body>
 </html>

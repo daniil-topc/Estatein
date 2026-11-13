@@ -604,6 +604,318 @@
 	}
 }
 
+/* Форма заявки: слева заголовок с описанием, справа форма в рамке */
+.property-inquiry.container {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+	align-items: start;
+	gap: 100px;
+	max-width: 1660px;
+	margin-top: 150px;
+	padding-block: 0;
+}
+
+.property-inquiry-sparkles {
+	display: block;
+	width: 69px;
+	height: 30px;
+	margin: -40px 0 10px -20px;
+}
+
+.property-inquiry-title {
+	margin: 0;
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.property-inquiry-description {
+	margin: 14px 0 0;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.property-inquiry-form {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 30px;
+	padding: 50px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 12px;
+}
+
+.property-inquiry-field {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	min-width: 0;
+}
+
+.property-inquiry-field-full,
+.property-inquiry-footer {
+	grid-column: 1 / -1;
+}
+
+.property-inquiry-label {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.property-inquiry-control {
+	width: 100%;
+	padding: 20px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 8px;
+	outline: 0;
+	color: var(--color-absolute-white);
+	background-color: var(--color-grey-10);
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	transition: border-color 0.2s ease;
+}
+
+.property-inquiry-control::placeholder {
+	color: var(--color-grey-40);
+	opacity: 1;
+}
+
+.property-inquiry-control:focus {
+	border-color: var(--color-purple-60);
+}
+
+.property-inquiry-message {
+	display: block;
+	min-height: 168px;
+	resize: vertical;
+}
+
+/* Объект уже выбран: поле только для чтения, справа значок с геометкой */
+.property-inquiry-property {
+	position: relative;
+}
+
+.property-inquiry-property .property-inquiry-control {
+	padding-right: 60px;
+	text-overflow: ellipsis;
+	cursor: default;
+}
+
+.property-inquiry-property-icon {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	width: 24px;
+	height: 24px;
+	fill: var(--color-absolute-white);
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+.property-inquiry-footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px 30px;
+}
+
+.property-inquiry-agree {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	cursor: pointer;
+}
+
+.property-inquiry-agree a {
+	color: inherit;
+	text-underline-offset: 3px;
+	transition: color 0.2s ease;
+}
+
+.property-inquiry-checkbox {
+	flex-shrink: 0;
+	width: 28px;
+	height: 28px;
+	margin: 0;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 6px;
+	appearance: none;
+	background-color: var(--color-grey-10);
+	cursor: pointer;
+}
+
+.property-inquiry-checkbox:checked {
+	border-color: var(--color-purple-60);
+	background: var(--color-purple-60) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12 5 5 9-10'/%3E%3C/svg%3E") center / 70% no-repeat;
+}
+
+.property-inquiry-submit {
+	padding: 16px 34px;
+	border: 1px solid var(--color-purple-60);
+	border-radius: 10px;
+	color: var(--color-absolute-white);
+	background-color: var(--color-purple-60);
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	cursor: pointer;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.property-inquiry-checkbox:focus-visible,
+.property-inquiry-submit:focus-visible {
+	outline: 2px solid var(--color-purple-70);
+	outline-offset: 4px;
+}
+
+@media (max-width: 1440px) {
+	.property-inquiry.container {
+		gap: 80px;
+		margin-top: 120px;
+		padding-inline: 80px;
+	}
+
+	.property-inquiry-sparkles {
+		width: 54px;
+		height: 24px;
+		margin-left: -10px;
+	}
+
+	.property-inquiry-title {
+		font-size: 38px;
+	}
+
+	.property-inquiry-description {
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.property-inquiry-form {
+		gap: 24px;
+		padding: 40px;
+		border-radius: 10px;
+	}
+
+	.property-inquiry-field {
+		gap: 14px;
+	}
+
+	.property-inquiry-label {
+		font-size: 18px;
+	}
+
+	.property-inquiry-control {
+		padding: 18px 20px;
+		font-size: 16px;
+	}
+
+	.property-inquiry-message {
+		min-height: 140px;
+	}
+
+	.property-inquiry-property-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.property-inquiry-agree {
+		font-size: 16px;
+	}
+
+	.property-inquiry-checkbox {
+		width: 24px;
+		height: 24px;
+		border-radius: 4px;
+	}
+
+	.property-inquiry-submit {
+		padding: 14px 24px;
+		border-radius: 8px;
+		font-size: 14px;
+	}
+}
+
+/* Заголовок встаёт над формой */
+@media (max-width: 1100px) {
+	.property-inquiry.container {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 40px;
+	}
+}
+
+@media (max-width: 960px) {
+	.property-inquiry.container {
+		margin-top: 100px;
+		padding-inline: 32px;
+	}
+}
+
+@media (max-width: 600px) {
+	.property-inquiry.container {
+		gap: 30px;
+		margin-top: 80px;
+		padding-inline: 16px;
+	}
+
+	.property-inquiry-title {
+		font-size: 28px;
+	}
+
+	.property-inquiry-description {
+		font-size: 14px;
+	}
+
+	.property-inquiry-form {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 20px;
+		padding: 24px;
+	}
+
+	.property-inquiry-field {
+		gap: 10px;
+	}
+
+	.property-inquiry-label {
+		font-size: 16px;
+	}
+
+	.property-inquiry-control {
+		padding: 16px;
+		font-size: 14px;
+	}
+
+	.property-inquiry-property .property-inquiry-control {
+		padding-right: 48px;
+	}
+
+	.property-inquiry-property-icon {
+		right: 16px;
+	}
+
+	.property-inquiry-footer {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.property-inquiry-agree {
+		font-size: 14px;
+	}
+
+	.property-inquiry-submit {
+		width: 100%;
+	}
+}
+
 @media (hover: hover) {
 	.property-gallery-thumb:hover::after {
 		opacity: 0.2;
@@ -616,11 +928,31 @@
 	.property-gallery-arrow:not(:disabled):hover {
 		border-color: var(--color-purple-60);
 	}
+
+	.property-inquiry-control:not([readonly]):hover {
+		border-color: var(--color-grey-30);
+	}
+
+	.property-inquiry-control:focus {
+		border-color: var(--color-purple-60);
+	}
+
+	.property-inquiry-agree a:hover {
+		color: var(--color-absolute-white);
+	}
+
+	.property-inquiry-submit:hover {
+		border-color: var(--color-purple-65);
+		background-color: var(--color-purple-65);
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {
 	.property-gallery-thumb::after,
-	.property-gallery-arrow {
+	.property-gallery-arrow,
+	.property-inquiry-control,
+	.property-inquiry-agree a,
+	.property-inquiry-submit {
 		transition: none;
 	}
 }
