@@ -371,6 +371,239 @@
 	}
 }
 
+/* Description & Features: две карточки рядом, сразу под галереей */
+.property-overview.container {
+	display: flex;
+	align-items: flex-start;
+	gap: 30px;
+	max-width: 1660px;
+	margin-top: 30px;
+	padding-block: 0;
+}
+
+.property-description,
+.property-features {
+	display: flex;
+	flex: 1 1 0;
+	flex-direction: column;
+	gap: 50px;
+	min-width: 0;
+	padding: 50px;
+	border: 1px solid var(--color-grey-15);
+	border-radius: 12px;
+}
+
+.property-description-text {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.property-overview-title {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.property-description-paragraph {
+	margin: 0;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+/* Цифры: три колонки с вертикальными разделителями, сверху линия */
+.property-stats {
+	display: flex;
+	gap: 20px;
+	margin: 0;
+	padding-top: 20px;
+	border-top: 1px solid var(--color-grey-15);
+}
+
+.property-stat {
+	display: flex;
+	flex: 1 1 0;
+	flex-direction: column;
+	gap: 10px;
+	min-width: 0;
+}
+
+.property-stat + .property-stat {
+	padding-left: 20px;
+	border-left: 1px solid var(--color-grey-15);
+}
+
+.property-stat-label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.property-stat-icon {
+	flex-shrink: 0;
+	width: 24px;
+	height: 24px;
+}
+
+.property-stat-value {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.property-features-list {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Особенность: фиолетовая полоска слева и фон, который растворяется вправо */
+.property-feature {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 18px 20px;
+	border-left: 1px solid var(--color-purple-60);
+	background: linear-gradient(90deg, var(--color-grey-10) 0%, rgb(26 26 26 / 0) 100%);
+	color: var(--color-grey-60);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.property-feature::before {
+	content: "";
+	flex-shrink: 0;
+	width: 24px;
+	height: 24px;
+	background: url("../../images/property-details/lightning.svg") center / contain no-repeat;
+}
+
+@media (max-width: 1440px) {
+	.property-overview.container {
+		gap: 20px;
+		margin-top: 20px;
+		padding-inline: 80px;
+	}
+
+	.property-description,
+	.property-features {
+		gap: 40px;
+		padding: 40px;
+		border-radius: 10px;
+	}
+
+	.property-description-text {
+		gap: 10px;
+	}
+
+	.property-overview-title {
+		font-size: 20px;
+	}
+
+	.property-description-paragraph,
+	.property-stat-label,
+	.property-feature {
+		font-size: 16px;
+	}
+
+	.property-stat-icon,
+	.property-feature::before {
+		width: 20px;
+		height: 20px;
+	}
+
+	.property-stat-value {
+		font-size: 20px;
+	}
+
+	.property-features-list {
+		gap: 20px;
+	}
+
+	.property-feature {
+		gap: 10px;
+		padding: 14px 16px;
+	}
+}
+
+/* Карточки встают друг под друга */
+@media (max-width: 1100px) {
+	.property-overview.container {
+		flex-direction: column;
+		align-items: stretch;
+	}
+}
+
+@media (max-width: 960px) {
+	.property-overview.container {
+		padding-inline: 32px;
+	}
+}
+
+@media (max-width: 600px) {
+	.property-overview.container {
+		padding-inline: 16px;
+	}
+
+	.property-description,
+	.property-features {
+		gap: 30px;
+		padding: 24px;
+	}
+
+	.property-overview-title {
+		font-size: 18px;
+	}
+
+	.property-description-paragraph,
+	.property-stat-label,
+	.property-feature {
+		font-size: 14px;
+	}
+
+	/* Спальни и ванные в ряд, площадь отдельной строкой на всю ширину */
+	.property-stats {
+		flex-wrap: wrap;
+		row-gap: 16px;
+	}
+
+	.property-stat {
+		flex-basis: calc(50% - 21px);
+	}
+
+	.property-stat:last-child {
+		flex-basis: 100%;
+		padding-top: 16px;
+		padding-left: 0;
+		border-top: 1px solid var(--color-grey-15);
+		border-left: 0;
+	}
+
+	.property-stat-value {
+		font-size: 18px;
+	}
+
+	.property-features-list {
+		gap: 16px;
+	}
+
+	.property-feature {
+		padding: 12px 14px;
+	}
+}
+
 @media (hover: hover) {
 	.property-gallery-thumb:hover::after {
 		opacity: 0.2;

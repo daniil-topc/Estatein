@@ -54,7 +54,6 @@ function updateGallery() {
 
 // клик по миниатюре: показываем фото с её номером
 galleryThumbElements.forEach((thumb, index) => {
-
     thumb.addEventListener('click', () => {
         currentIndex = index
         updateGallery()
